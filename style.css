@@ -1,0 +1,176 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #fffff;
+  font-family: objektiv-mk2, sans-serif;
+}
+
+/*    ~~   Name Logo     ~~      */
+#name-logo p{
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #1D252A;
+  float: left;
+  margin-left: 100px;
+}
+
+/*    ~~   Navigation Bar  ~~       */
+.nav-bar ul {
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  float: right;
+  list-style-type: none;
+  margin-right: 100px;
+  word-spacing: 20px;
+}
+
+.nav-bar li {
+  display: inline;
+}
+.nav-bar li a{
+   text-decoration: none;
+ }
+
+.nav-bar a:link{
+  color: #1D252A;
+}
+
+.nav-bar a:visited{
+  color: #1D252A;
+}
+
+.nav-bar a:hover{
+  background-color: #CFC6D8;
+}
+
+/*    ~~   Opening title    ~~   */
+.opening {
+  margin: auto;
+  width: 80em;
+}
+.opening h1{
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 167px;
+  color: #1D252A;
+  padding-top: 400px;
+  margin-left: 300px;
+}
+
+.opening h2{
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #1D252A;
+  text-align: left;
+  margin-left: 760px;
+  margin-top: -280px;
+
+}
+
+/*    ~~   "I am a" animation   ~~    */
+/*Wrapper*/
+.wrapper{
+    position: relative;
+}
+
+/*Vertical Sliding*/
+.slidingVertical{
+	display: inline;
+	text-indent: 10px;
+}
+.slidingVertical span{
+	animation: topToBottom 7.5s linear infinite 0s;
+	-ms-animation: topToBottom 7.5s linear infinite 0s;
+	-webkit-animation: topToBottom 7.5s linear infinite 0s;
+	color: #1D252A;
+  background-color: #FFE3A6;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+/*    ~~   small intro paragraph   ~~    */
+
+/*    ~~   social media icons   ~~    */
+#social-outer{
+  height: 90px;
+  background-color: #fffff;
+}
+
+.social {
+display: table;
+margin: auto;
+}
+
+.social li{
+ display: inline;
+}
+
+#icon{
+  padding-left: 10px;
+}
+
+/*    ~~   projects section   ~~    */
+.projects h2{
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: #1D252A;
+  text-align: center;
+  padding-top: 600px;
+}
+
+.projects hr {
+  width: 300px;
+  background-color: #FFAF00;
+  height: 6px;
+  border: 0;
+  margin-top: -40px;
+}
