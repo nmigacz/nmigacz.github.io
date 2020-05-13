@@ -83,7 +83,7 @@ body{
 /*Vertical Sliding*/
 .slidingVertical{
 	display: inline;
-	text-indent: 10px;
+	text-indent: 5px;
 }
 .slidingVertical span{
 	animation: topToBottom 7.5s linear infinite 0s;
@@ -148,11 +148,6 @@ body{
   color: #1D252A;
 }
 /*    ~~   social media icons   ~~    */
-#social-outer{
-  height: 90px;
-  background-color: #fffff;
-}
-
 .social {
 display: table;
 margin: auto;
@@ -191,7 +186,7 @@ margin: auto;
   margin-right: 40px;
   margin-bottom: 50px;
   display: grid;
-  height: 2000px;
+  height: auto;
   width: auto;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
@@ -213,17 +208,32 @@ margin: auto;
 
 .itemb{
   overflow: hidden;
+  background-color: #e8e8e8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #itembimg{
   margin-left: -660px;
+  margin-top: 40px;
 }
 .itemc{
   overflow: hidden;
+  background-color: #ffcb60;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #itemcimg{
   margin-left: -650px;
+  margin-top: 30px;
+}
+
+/*    ~~   projects section   ~~    */
+.footer{
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: #1D252A;
+  text-align: center;
+  margin-bottom: 30px;
 }
