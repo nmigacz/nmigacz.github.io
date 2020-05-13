@@ -10,7 +10,7 @@ body{
   font-family: davis, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 32px;
+  font-size: 36px;
   color: #1D252A;
   float: left;
   margin-left: 100px;
@@ -21,7 +21,7 @@ body{
   font-family: davis, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 28px;
+  font-size: 32px;
   float: right;
   list-style-type: none;
   margin-right: 100px;
@@ -56,21 +56,21 @@ body{
   font-family: davis, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 167px;
+  font-size: 190px;
   color: #1D252A;
   padding-top: 400px;
-  margin-left: 300px;
+  margin-left: 250px;
 }
 
 .opening h2{
   font-family: davis, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 50px;
+  font-size: 72px;
   color: #1D252A;
   text-align: left;
   margin-left: 760px;
-  margin-top: -280px;
+  margin-top: -350px;
 
 }
 
@@ -136,7 +136,15 @@ body{
 }
 
 /*    ~~   small intro paragraph   ~~    */
-
+.intro-p p{
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25px;
+  color: #1D252A;
+  text-align: center;
+  margin-top: -30px;
+}
 /*    ~~   social media icons   ~~    */
 #social-outer{
   height: 90px;
