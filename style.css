@@ -4,52 +4,12 @@ body{
   background: #fffff;
   font-family: objektiv-mk2, sans-serif;
 }
-
-/*    ~~   Name Logo     ~~      */
-#name-logo p{
-  font-family: davis, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 36px;
-  color: #1D252A;
-  float: left;
-  margin-left: 100px;
-}
-
-/*    ~~   Navigation Bar  ~~       */
-.nav-bar ul {
-  font-family: davis, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
-  float: right;
-  list-style-type: none;
-  margin-right: 100px;
-  word-spacing: 20px;
-}
-
-.nav-bar li {
-  display: inline;
-}
-.nav-bar li a{
-   text-decoration: none;
- }
-
-.nav-bar a:link{
-  color: #1D252A;
-}
-
-.nav-bar a:visited{
-  color: #1D252A;
-}
-
-.nav-bar a:hover{
-  background-color: #CFC6D8;
-}
+/*    ~~   Find HEADER styles on headerStyle.css    ~~   */
 
 /*    ~~   Opening title    ~~   */
 .opening {
   margin: auto;
+  margin-top: -200px;
   width: 80em;
 }
 .opening h1{
