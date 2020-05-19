@@ -5,7 +5,7 @@ body{
   font-family: objektiv-mk2, sans-serif;
   font-size: 20px;
 }
-/*    ~~   Universal Header for all pages    ~~   */
+/*    ~~   Universal Header & Footer for all pages    ~~   */
 .header{
   font-family: davis, sans-serif;
   font-weight: 400;
@@ -64,6 +64,10 @@ body{
   color: #1D252A;
 }
 
+#current{
+  background-color: #CFC6D8;
+}
+
 .nav-bar a:visited{
   color: #1D252A;
 }
@@ -93,4 +97,15 @@ body{
 
 .list li:hover::after {
   width: 100%;
+}
+
+/*    ~~   footer   ~~    */
+.footer{
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: #1D252A;
+  text-align: center;
+  margin-bottom: 30px;
 }
