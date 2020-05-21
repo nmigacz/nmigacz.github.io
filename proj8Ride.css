@@ -18,11 +18,7 @@ body{
   padding-left: 90px;
 }
 
-.MOSF-code iframe{
-  width: 75%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
+.MOSF-8R iframe{
+  margin-left: auto;
+  margin-right: auto;
 }
