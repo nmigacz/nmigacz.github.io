@@ -16,10 +16,10 @@ body{
 
 /*    ~~   Name Logo     ~~      */
 #name-logo a{
-  font-size: 36px;
+  font-size: 30px;
   color: #1D252A;
   float:left;
-  margin-top: 50px;
+  margin-top: 20px;
   text-decoration: none;
   transition:color 0.50s ease;
   display: inline-block;
@@ -49,11 +49,11 @@ body{
 
 /*    ~~   Navigation Bar  ~~       */
 .nav-bar ul {
-  font-size: 32px;
+  font-size: 28px;
   float: right;
   list-style-type: none;
   word-spacing: 20px;
-  margin-top: 54px;
+  margin-top: 24px;
 }
 
 .nav-bar a{

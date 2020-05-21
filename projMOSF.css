@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #fffff;
+  font-family: objektiv-mk2, sans-serif;
+  font-size: 20px;
+}
+/*    ~~   Find HEADER styles on headerStyle.css    ~~   */
+
+.title h1{
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: #1D252A;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.title hr {
+  width: 300px;
+  background-color: #FFAF00;
+  height: 6px;
+  border: 0;
+  margin-top: -40px;
+}
+
+.MOSF-code iframe{
+  margin-left: auto;
+  margin-right: auto;
+}
