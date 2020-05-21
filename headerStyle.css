@@ -10,16 +10,15 @@ body{
   font-family: davis, sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 100px;
+  padding: 50px;
   text-align: justify;
 }
 
 /*    ~~   Name Logo     ~~      */
 #name-logo a{
-  font-size: 30px;
+  font-size: 26px;
   color: #1D252A;
   float:left;
-  margin-top: 20px;
   text-decoration: none;
   transition:color 0.50s ease;
   display: inline-block;
@@ -49,11 +48,11 @@ body{
 
 /*    ~~   Navigation Bar  ~~       */
 .nav-bar ul {
-  font-size: 28px;
+  font-size: 24px;
   float: right;
   list-style-type: none;
   word-spacing: 20px;
-  margin-top: 24px;
+  margin-top: 4px;
 }
 
 .nav-bar a{
@@ -104,7 +103,7 @@ body{
   font-family: objektiv-mk2, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 20px;
+  font-size: 10px;
   color: #1D252A;
   text-align: center;
   margin-bottom: 30px;
