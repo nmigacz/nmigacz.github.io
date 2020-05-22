@@ -5,22 +5,39 @@ body{
   font-family: objektiv-mk2, sans-serif;
   font-size: 20px;
 }
-/*    ~~   Find HEADER styles on headerStyle.css    ~~   */
+@media only screen and (max-width: 600px){
 
-.title h1{
-  font-family: davis, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 70px;
-  color: #1D252A;
-  text-align: center;
-  margin-top: 200px;
 }
+@media only screen and (min-width: 600px){
 
-.title hr {
-  width: 300px;
-  background-color: #FFAF00;
-  height: 6px;
-  border: 0;
-  margin-top: -40px;
+}
+@media only screen and (min-width: 768px){
+
+}
+@media only screen and (min-width: 992px){
+
+}
+@media only screen and (min-width: 1200px){
+  /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
+
+  .title h1{
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #1D252A;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .title hr {
+    width: 300px;
+    background-color: #FFAF00;
+    height: 6px;
+    border: 0;
+    margin-top: -40px;
+  }
+}
+@media only screen and (min-width: 2100px){
+
 }

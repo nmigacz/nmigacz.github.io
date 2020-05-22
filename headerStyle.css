@@ -5,7 +5,13 @@ body{
   font-family: objektiv-mk2, sans-serif;
   font-size: 20px;
 }
+
 /*    ~~   Universal Header & Footer for all pages    ~~   */
+/*    ~~   scroll down to see rwd for Header and Footer    ~~   */
+.dropdown,
+.ss-name{
+display: none;
+}
 .header{
   font-family: davis, sans-serif;
   font-weight: 400;
@@ -16,7 +22,7 @@ body{
 
 /*    ~~   Name Logo     ~~      */
 #name-logo a{
-  font-size: 26px;
+  font-size: 28px;
   color: #1D252A;
   float:left;
   text-decoration: none;
@@ -48,7 +54,7 @@ body{
 
 /*    ~~   Navigation Bar  ~~       */
 .nav-bar ul {
-  font-size: 24px;
+  font-size: 26px;
   float: right;
   list-style-type: none;
   word-spacing: 20px;
@@ -107,4 +113,114 @@ body{
   color: #1D252A;
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 2100px){
+  #name-logo a{
+    font-size: 26px;
+  }
+  .nav-bar ul{
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 992px){
+#name-logo a{
+  font-size: 22px;
+}
+.nav-bar ul{
+  font-size: 20px;
+}
+}
+@media only screen and (max-width: 769px){
+  #name-logo,
+  .nav-bar,
+  .header{
+    display: none;
+  }
+  .ss-name,
+  .dropdown{
+      display: block;
+    }
+  /*    ~~   HEADER FOR PHONES (768px and smaller)   ~~   */
+.header-s{
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 50px 50px 30px;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;        /* center items horizontally, in this case */
+  height: auto;
+}
+}
+
+.ss-name a{
+  font-size: 26px;
+  color: #1D252A;
+  text-decoration: none;
+}
+.dropbtn {
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #ffff;
+  border: none;
+  padding: 10px 10px;
+}
+.centerbtn{
+  display: flex;              /* establish flex container */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffff;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 24px;
+  color: #1D252A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+  position: absolute;
+}
+
+
+
+/*    ~~   FOOTER   ~~    */
+.footer{
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  color: #1D252A;
+  text-align: center;
+  margin-bottom: 30px;
+}
 }
