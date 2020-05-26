@@ -286,7 +286,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   /*    ~~   The Process Section ~~    */
@@ -489,10 +489,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    margin: auto;
   }
+
   .research img{
     display: block;
-    width: 50%;
+    width: 100%;
     margin: auto;
   }
 
@@ -548,14 +551,15 @@ body{
   }
 
   .vis-img{
-    width: 100%;
+    width: 50%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .vis img{
     display: block;
-    width: 50%;
+    width: 100%;
     margin: auto;
     margin-bottom: 20px;
   }
@@ -602,6 +606,7 @@ body{
 
   .wire img{
     width: 100%;
+    padding: 20px 0px;
   }
 
 /*    ~~   Features section ~~    */
@@ -650,6 +655,10 @@ body{
 
 
 @media only screen and (max-width: 2100px){
+  .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
+  .panel-6, .panel-7, .panel-8, .panel-9, .panel-10 {
+    padding: 100px 100px;
+  }
 
 }
 @media only screen and (max-width: 1200px){
