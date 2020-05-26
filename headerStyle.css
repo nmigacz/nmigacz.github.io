@@ -112,6 +112,7 @@ display: none;
   font-size: 10px;
   color: #1D252A;
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -209,18 +210,5 @@ display: none;
 .show {
   display: block;
   position: absolute;
-}
-
-
-
-/*    ~~   FOOTER   ~~    */
-.footer{
-  font-family: objektiv-mk2, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 10px;
-  color: #1D252A;
-  text-align: center;
-  margin-bottom: 30px;
 }
 }

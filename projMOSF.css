@@ -5,34 +5,283 @@ body{
   font-family: objektiv-mk2, sans-serif;
   font-size: 20px;
 }
-@media only screen and (max-width: 600px){
 
-}
-@media only screen and (min-width: 600px){
-
-}
-@media only screen and (min-width: 768px){
-
-}
-@media only screen and (min-width: 992px){
-
-}
-@media only screen and (min-width: 1200px){
   /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
+  /*    ~~   scroll down to see rwd for project MOSF page ~~   */
 
-  .title h1{
+  /*    ~~   Project Title and subhead   ~~    */
+  .page-title{
+    display: block;
+    margin-top: 100px;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    padding: 100px 300px 0px 300px;
+  }
+  .page-title h1{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+  .page-title h2{
+    display: block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    margin: -10px 0px 0px 0px;
+  }
+
+  /*    ~~   Main Project Image   ~~    */
+  .opening-img img{
+    width: 100%;
+    margin: auto;
+  }
+
+  /*    ~~   Overview and Project Info  ~~    */
+  .panel-1{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .overview{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    padding: 0px 100px 0px 0px;
+  }
+  .overview h1{
+    display: inline-block;
     font-family: davis, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
     color: #1D252A;
     text-align: left;
-    margin-top: 100px;
-    padding-left: 90px;
+    margin: 0px 0px 0px 0px;
+    background-color: #FFE3A6;
+  }
+
+  .overview p{
+    display: inline-block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    margin: 30px 0px 0px 0px;
+  }
+
+  .side-panel{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    padding: 0px 0px 0px 200px;
+  }
+
+  .side-panel h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .side-panel p{
+    display: inline-block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .long-rule hr{
+    width: 2000px;
+    background-color: #354B57;
+    height: 2px;
+    border: 0;
+    margin: auto;
+  }
+  .short-rule hr{
+    width: 1000px;
+    background-color: #354B57;
+    height: 1.5px;
+    border: 0;
+    margin: auto;
+  }
+
+  /*    ~~   Challenge Section ~~    */
+  .panel-2{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .challenge {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin: 0px 0px 0px 0px;
+    float: left;
+  }
+  .challenge h1{
+    display: inline-block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    background-color: #FFE3A6;
+  }
+    .challenge h3{
+    display: block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: #1D252A;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+  }
+  /*    ~~   Project Goals subsection  ~~    */
+  .panel-3{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proj-goals{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .proj-goals h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .proj-goals ul{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .proj-goals li{
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .side-goals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 50px;
+    margin-top: 80px;
+  }
+
+  .side-goals ul{
+    display: inline-block;
+  }
+
+  .side-goals li{
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+  }
+
+  /*    ~~   Solution subsection (XD Embed) ~~    */
+  .panel-4{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solution{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .solution h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .solution h3{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 40px 0px 0px 0px;
   }
 
   .MOSF-code iframe{
-    width: 75%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -40,7 +289,381 @@ body{
     margin-top: 150px;
   }
 
+  /*    ~~   The Process Section ~~    */
+  .panel-5{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .process{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin: 0px 0px 0px 0px;
+    float: left;
+  }
+
+  .process h1{
+    display: inline-block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+    background-color: #FFE3A6;
+    float: left;
+  }
+
+  .process ul{
+    display: inline-block;
+    list-style-type: none;
+    float:left;
+    padding: 50px 0px 0px 0px;
+  }
+
+  .process li{
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #1D252A;
+    text-align: left;
+    padding: 40px 0px;
+  }
+
+  .side-process{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px -600px;
+    float: left;
+  }
+  .side-process ul{
+    display: inline-block;
+    list-style-type: none;
+    float:left;
+    padding: 0px 0px 0px 0px;
+    margin-top: -50px;
+  }
+
+  .side-process li{
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #1D252A;
+    text-align: left;
+    padding: 40px 0px;
+  }
+
+  /*    ~~   Company Goals section ~~    */
+  .panel-6{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company-goals{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .company-goals h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .company-goals ul{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 250px;
+
+  }
+  .company-goals li{
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .side-goals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 50px;
+    margin-top: 80px;
+  }
+
+  .side-goals ul{
+    display: inline-block;
+  }
+
+  .side-goals li{
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+  }
+
+  /*    ~~   research Section ~~    */
+  .panel-7{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .research{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .research h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 60px 0px;
+  }
+
+  .research h3{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .research p{
+      display: inline-block;
+      font-family: objektiv-mk2, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 30px;
+      color: #1D252A;
+      text-align: left;
+      margin: 0px 0px px 0px;
+  }
+
+  .research-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .research img{
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+/*    ~~   Visualization section ~~    */
+  .panel-8{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vis{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .vis h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .vis h3{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .vis p{
+    display: inline-block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px px 0px;
+  }
+
+  .vis-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vis img{
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+/*    ~~   Wireframes section ~~    */
+  .panel-9{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wire{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .wire h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .wire h3{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .wire img{
+    width: 100%;
+  }
+
+/*    ~~   Features section ~~    */
+  .panel-10{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feat{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .feat h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .feat h3{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .feat img{
+    width: 100%;
+  }
+
+
+@media only screen and (max-width: 2100px){
+
 }
-@media only screen and (min-width: 2000px){
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 769px){
+
+}
+@media only screen and (max-width: 600px){
+
+}
+@media only screen and (max-width: 370px){
 
 }
