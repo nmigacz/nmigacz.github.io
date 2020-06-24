@@ -7,18 +7,17 @@ body{
 }
 
   /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
-  /*    ~~   scroll down to see rwd for project MOSF page ~~   */
+  /*    ~~   scroll down to see rwd for project 8 Ride page ~~   */
 
 /*===================================
 === Project Title and Subhead ===
 ======================================== */
   .page-title{
     display: block;
-    margin-top: 100px;
     width: auto;
     height: 100%;
     margin: auto;
-    padding: 100px 300px 0px 300px;
+    padding: 100px 300px 50px 300px;
   }
 
   .page-title h1{
@@ -238,9 +237,8 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-    margin: auto;
     padding: 0px 0px 0px 50px;
-    margin-top: 80px;
+    margin-top: 65px;
   }
 
   .side-goals ul{
@@ -329,9 +327,7 @@ body{
     display: inline-block;
     width: 100%;
     height: 100%;
-    margin: auto;
     margin: 0px 0px 0px 0px;
-    float: left;
   }
 
   .process h1{
@@ -349,11 +345,17 @@ body{
     background-color: #FFE3A6;
   }
 
+  .process-list{
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .process ul{
     display: inline-block;
     list-style-type: none;
-    padding-right: 100px;
-    float: right;
   }
 
   .process li{
@@ -362,106 +364,12 @@ body{
     font-style: normal;
     font-size: 35px;
     color: #1D252A;
-    text-align: left;
-    padding: 40px 0px;
-  }
-
-  .side-process{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    margin: 0px 0px 0px 0px;
-    float: left;
-  }
-  .side-process ul{
-    display: inline-block;
-    list-style-type: none;
-    float:left;
-    padding: 0px 0px 0px 100px;
-  }
-
-  .side-process li{
-    font-family: davis, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    color: #1D252A;
-    text-align: left;
-    padding: 40px 0px;
-  }
-
-  /*  ========== SUBSECTION: Company Goals ============  */
-  .panel-6{
-    padding: 100px 300px;
-    width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .company-goals{
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 0px 0px 0px 0px;
-  }
-
-  .company-goals h2{
-    display: block;
-    font-family: davis, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    color: #1D252A;
-    text-align: left;
-    margin: 0px 0px 30px 0px;
-  }
-
-  .company-goals ul{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-  .company-goals li{
-    font-family: objektiv-mk2, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30px;
-    color: #1D252A;
-    text-align: left;
-    padding: 20px 0px 20px 0px;
-  }
-
-  .side-goals{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 0px 0px 0px 50px;
-    margin-top: 80px;
-  }
-
-  .side-goals ul{
-    display: inline-block;
-  }
-
-  .side-goals li{
-    font-family: objektiv-mk2, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30px;
-    color: #1D252A;
-    text-align: left;
-    padding: 20px 0px 20px 0px;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
   }
 
 /*  ========== SUBSECTION: Research ============  */
-  .panel-7{
+  .panel-6{
     padding: 100px 300px;
     width: auto;
     margin: auto;
@@ -515,7 +423,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     margin: auto;
   }
 
@@ -526,7 +434,7 @@ body{
   }
 
 /*  ========== SUBSECTION: Visualization ============  */
-  .panel-8{
+  .panel-7{
     padding: 100px 300px;
     width: auto;
     margin: auto;
@@ -577,7 +485,7 @@ body{
   }
 
   .vis-img{
-    width: 50%;
+    width: 75%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -591,7 +499,7 @@ body{
   }
 
 /*  ========== SUBSECTION: Wireframes ============  */
-  .panel-9{
+  .panel-8{
     padding: 100px 300px;
     width: auto;
     margin: auto;
@@ -631,12 +539,14 @@ body{
   }
 
   .wire img{
+    display: block;
     width: 100%;
+    margin: auto;
     padding: 20px 0px;
   }
 
 /*  ========== SUBSECTION: Features ============  */
-  .panel-10{
+  .panel-9{
     padding: 100px 300px;
     width: auto;
     margin: auto;
@@ -685,21 +595,21 @@ body{
   === Common Items ===
   ======================================== */
   .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
-  .panel-6, .panel-7, .panel-8, .panel-9, .panel-10 {
+  .panel-6, .panel-7, .panel-8, .panel-9 {
     padding: 100px 150px 50px 150px;
   }
 
   .overview h1, .challenge h1, .process h1, .process li, .side-process li{
     font-size: 30px;
   }
-  .proj-goals h2, .solution h2, .company-goals h2, .research h2, .vis h2, .wire h2, .feat h2{
+  .proj-goals h2, .solution h2, .research h2, .vis h2, .wire h2, .feat h2{
     font-size: 30px;
   }
   .solution h3, .research h3, .vis h3, .wire h3, .feat h3, .challenge h3{
     font-size: 30px;
   }
 
-  .overview p, .proj-goals li, .side-goals li, .company-goals li, .side-goals li, .research p, .vis p{
+  .overview p, .proj-goals li, .side-goals li, .research p, .vis p{
     font-size: 20px;
   }
 
@@ -755,13 +665,19 @@ body{
   .side-process{
     margin: 0px 0px 0px 0px;
   }
+  /*===================================
+  === SECTION: Visualization===
+  ======================================== */
+  .vis-img{
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1200px){
   /*===================================
   === Common Items ===
   ======================================== */
   .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
-  .panel-6, .panel-7, .panel-8, .panel-9, .panel-10 {
+  .panel-6, .panel-7, .panel-8, .panel-9{
     padding: 75px 100px;
   }
 
@@ -814,7 +730,7 @@ body{
   === Common Items ===
   ======================================== */
   .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
-  .panel-6, .panel-7, .panel-8, .panel-9, .panel-10 {
+  .panel-6, .panel-7, .panel-8, .panel-9{
     padding: 50px 50px;
   }
 
@@ -822,7 +738,7 @@ body{
     font-size: 25px;
   }
 
-  .proj-goals h2, .solution h2, .company-goals h2, .research h2, .vis h2, .wire h2, .feat h2{
+  .proj-goals h2, .solution h2, .research h2, .vis h2, .wire h2, .feat h2{
     font-size: 25px;
     margin: 0px 0px 0px 0px;
   }
@@ -832,7 +748,7 @@ body{
     margin: 20px 0px 0px 0px;
   }
 
-  .overview p, .proj-goals li, .side-goals li, .company-goals li, .side-goals li, .research p, .vis p{
+  .overview p, .proj-goals li, .side-goals li, .research p, .vis p{
     font-size: 15px;
   }
 
@@ -869,7 +785,7 @@ body{
   /*===================================
   === SECTION: Company and Project Goals ===
   ======================================== */
-  .company-goals li, .proj-goals li, .side-goals li{
+  .proj-goals li, .side-goals li{
     padding: 10px 0px;
   }
 
@@ -927,15 +843,15 @@ body{
   === Common Items ===
   ======================================== */
   .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
-  .panel-6, .panel-7, .panel-8 {
+  .panel-6, .panel-7 {
     padding: 50px 30px;
   }
 
-  .panel-9, .panel-10{
+  .panel-8, .panel-9{
     padding: 50px 10px;
   }
 
-  .overview p, .proj-goals li, .side-goals li, .company-goals li, .side-goals li, .research p, .vis p{
+  .overview p, .proj-goals li, .side-goals li, .research p, .vis p{
     font-size: 15px;
   }
 
@@ -1033,17 +949,6 @@ body{
   }
 
   /*===================================
-  === SECTION: Company Goals ===
-  ======================================== */
-  .panel-6{
-    display: block;
-  }
-
-  .company-goals ul{
-    margin-bottom: 0px;
-  }
-
-  /*===================================
   === Long and Short Rule===
   ======================================== */
   .long-rule hr{
@@ -1058,11 +963,11 @@ body{
   === Common Items ===
   ======================================== */
   .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
-  .panel-6, .panel-7, .panel-8 {
+  .panel-6, .panel-7 {
     padding: 30px 20px;
   }
 
-  .panel-9, .panel-10{
+  .panel-8, .panel-9{
     padding: 30px 10px;
   }
 
@@ -1070,7 +975,7 @@ body{
     font-size: 20px;
   }
 
-  .proj-goals h2, .solution h2, .company-goals h2, .research h2, .vis h2, .wire h2, .feat h2{
+  .proj-goals h2, .solution h2, .research h2, .vis h2, .wire h2, .feat h2{
     font-size: 20px;
   }
 
