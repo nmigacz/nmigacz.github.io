@@ -33,7 +33,7 @@ body{
   === About Me section ===
   ======================================== */
   .about{
-    padding: 100px 100px;
+    padding: 100px 100px 0px 100px;
     width: auto;
     margin: auto;
     display: flex;
@@ -76,14 +76,34 @@ body{
   }
 
   /*  ========== SUBSECTION: Link Styling ============  */
-  a, a:visited{
+  #link, #link:visited{
     color: #FFAF00;
   }
 
-  a:hover{
+  #link:hover{
     color: #1D252A;
   }
 
+/*  ========== SUBSECTION: Socials ============  */
+  .social {
+  display: table;
+  margin: auto;
+  }
+  .social ul{
+    padding: 0px 0px;
+  }
+  .social li{
+   display: inline;
+   margin: auto;
+  }
+
+  #icon{
+  padding-left: 10px;
+  }
+
+  i:hover{
+    color: #7B6F87;
+  }
 @media only screen and (max-width: 2100px){
   .picture{
     width: 75%;
@@ -117,7 +137,6 @@ body{
   }
 
   .bio p{
-    font-size: 12px;
     margin: 0px 0px 0px 30px;
   }
 }

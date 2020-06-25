@@ -135,6 +135,10 @@ body{
   padding-left: 10px;
   }
 
+  .social i:hover{
+    color: #7B6F87;
+  }
+
   /*    ~~   projects section   ~~    */
   .projects h2{
     font-family: davis, sans-serif;
