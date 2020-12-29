@@ -7,6 +7,7 @@ body{
 }
 /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
 
+  /*    ~~   Playground Section   ~~    */
 .title h1{
   font-family: davis, sans-serif;
   font-weight: 400;
@@ -14,7 +15,7 @@ body{
   font-size: 70px;
   color: #1D252A;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .title hr {
@@ -25,21 +26,306 @@ body{
   margin-top: -40px;
 }
 
+  /*    ~~   content display  ~~    */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 8px 0px 8px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+.imgGroup:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+  /*    ~~   Modal (Lightbox Display)  ~~    */
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  margin-bottom: 150px;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 @media only screen and (max-width: 2100px){
+  .opening{
+    margin-top: 150px;
+  }
+  #type1{
+  font-size: 170px;
+  }
+  #type2{
+  font-size: 50px;
+  }
+  .intro-p{
+  font-size: 25px;
+  }
+  .social{
+    margin-top: -20px;
+  }
+  .grid{
+    margin: 40px 40px 40px 40px;
+    width: auto;
+  }
 
 }
 @media only screen and (max-width: 1200px){
-
+  #type1{
+    font-size: 150px;
+  }
+  #type2{
+    font-size: 40px;
+  }
+  .intro-p{
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 992px){
+  .title h1{
+    margin-top: 50px;
+  }
+  .opening{
+    margin-top: 100px;
+  }
+  #type1{
+    font-size: 110px;
+  }
+  #type2{
+    font-size: 30px;
+  }
+  .intro-p{
+    font-size: 18px;
+    margin-top: -30px;
+  }
+  svg{
+    width: 20px;
+    height: 20px;
+  }
+  .grid{
+    margin: 40px 20px 40px 20px;
+    width: auto;
+    height:auto;
+    padding-bottom: 20px;
+  }
+  .itema,
+  .itemb,
+  .itemc{
+    grid-column: 1 / span 2;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 
+  #itemaimg{
+    display: none;
+  }
+
+  #itemaimg_small{
+    display: block;
+  }
+
+  #itemaimg_small,
+  #itembimg,
+  #itemcimg{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 769px){
+  .title h1{
+    margin-top: 25px;
+    font-size: 60px;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .opening{
+    margin-top: 25px;
+  }
+  #type1{
+    font-size: 100px;
+  }
+  #type2{
+    font-size: 20px;
+  }
 
+  .intro-p{
+    font-size: 15px;
+  }
+
+  .grid{
+    margin: 40px 0px 20px 0px;
+    width: auto;
+    height:auto;
+    padding-bottom: 10px;
+  }
 }
 @media only screen and (max-width: 600px){
+  .title h1{
+    margin-top: 15px;
+    font-size: 55px;
+  }
+  .title hr {
+    width: 200px;
+    height: 4px;
+    margin-top: -30px;
+  }
+  .opening{
+    display: block;
+    padding: 25px 50px 0px 50px;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  #type1{
+    float: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  #type2 p{
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: #1D252A;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+  }
+  #type2{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    float: none;
+    padding-left: 5px;
+    padding-top: 0px;
+    margin-top: -20px;
+    font-size: 36px;
+  }
 
+  .intro-p{
+    display: none;
+  }
+  .intro-p-small{
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    color: #1D252A;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    width: auto;
+    margin: auto;
+    padding: 0px 20px;
+  }
+  svg{
+    width: 25px;
+    height: 25px;
+  }
 }
 @media only screen and (max-width: 370px){
+  .title h1{
+    margin-top: 5px;
+    font-size: 45px;
+  }
+  .title hr {
+    margin-top: -20px;
+  }
+  #type1{
+    font-size: 90px;
+  }
 
+  #type2, #type2 p{
+    font-size: 30px;
+  }
+  .intro-p-small{
+    font-size: 12px;
+  }
 }

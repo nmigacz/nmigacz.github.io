@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/lrz7lws.css">
   <link rel="stylesheet" href="headerStyle.css">
   <link rel="stylesheet" href="playgroundStyle.css">
-  <script src="init.js"></script>
+  <script src="playground.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -49,10 +49,105 @@
      </div>
    </div>
 
+<!--- Playground title  -->
    <div class="title">
      <h1>playground</h1>
      <hr>
    </div>
+
+<!--- Artwork  -->
+   <div class="row">
+  <div class="column">
+    <div class="imgGroup">
+    <img id="itemimg1" src="img/healthCal2.png" onclick="openModal(); currentSlide(1)" class="hover-shadow" alt="Health Calendar UI">
+    <div class="overlay">
+      <div class="text">Health Calendar UI
+    </div>
+  </div>
+  </div>
+  <div class="imgGroup">
+    <img id="itemimg1" src="img/jubilation.png" onclick="openModal(); currentSlide(2)" class="hover-shadow" alt="Jubilation.">
+    <div class="overlay">
+      <div class="text">Jubilation.</div>
+  </div>
+  </div>
+  <div class="imgGroup">
+    <img id="itemimg2" src="img/latinPoster.png" onclick="openModal(); currentSlide(3)" class="hover-shadow" alt="How do you get your hair to do that?">
+    <div class="overlay">
+      <div class="text">"How did you get your hair to do that?"</div>
+  </div>
+  </div>
+  </div>
+
+  <div class="column">
+    <div class="imgGroup">
+    <img id="itemimg3" src="img/mushroomUI.png" onclick="openModal(); currentSlide(4)" class="hover-shadow" alt="Mushroom Information Page UI">
+    <div class="overlay">
+      <div class="text">Mushroom Information Page UI</div>
+    </div>
+    </div>
+    <div class="imgGroup">
+      <img id="itemimg4" src="img/SkylineMag.png" onclick="openModal(); currentSlide(5)" class="hover-shadow" alt="Skyline Magazine Cover">
+      <div class="overlay">
+        <div class="text">Skyline Magazine Cover</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="img/healthCal2.png" style="width:100%" alt="Health Calendar UI">
+      <div class="overlay">Health Calendar UI</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="img/jubilation.png"  style="width:100%" alt="Jubilation.">
+      <div class="overlay">Jubilation.</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="img/latinPoster.png" style="width:100%" alt="How did you get your hair to do that?">
+      <div class="overlay">"How did you get your hair to do that?"</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="img/mushroomUI.png"  style="width:100%" alt="Mushroom Information Page UI">
+      <div class="overlay">Mushroom Information Page UI</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="img/SkylineMag.png"  style="width:100%" alt="Skyline Magazine Cover">
+    </div>
+
+  </div>
+</div>
+
+<!--   <div class="grid">
+
+       <div class="itema">
+         <img id="itemaimg" src="img/latinPoster.png" alt="Latin Poster">
+       </div>
+       <div class="itemb">
+         <img id="itembimg" src="img/latinPoster.png" alt="8 Ride Redesign Project">
+       </div>
+       <div class="itemc">
+         <img id="itemcimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
+       </div>
+       <div class="itemd">
+         <img id="itemdimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
+       </div>
+       <div class="iteme">
+         <img id="itemeimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
+       </div>
+       <div class="itemf">
+         <img id="itemfimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
+       </div>
+   </div> -->
 
    <div class="footer">
    <footer>
