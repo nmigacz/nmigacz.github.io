@@ -174,18 +174,26 @@ body{
   }
   .itema,
   .itemb,
-  .itemc{
+  .itemc,
+  .itemd,
+  .iteme{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .itema{
     grid-column: 1 / span 2;
     overflow: hidden;
-    background-color: #2b296c;
+    background-color: #f1f0f0;
   }
   .itemb{
-    background-color: #e8e8e8;
+    background-color: #5D79AE;
   }
   .itemc{
+    background-color: #2b296c;
+  }
+  .itemd {
+    background-color: #e8e8e8;
+  }
+  .iteme {
     background-color: #ffcb60;
   }
 
@@ -195,7 +203,9 @@ body{
 
   #itemaimg,
   #itembimg,
-  #itemcimg{
+  #itemcimg,
+  #itemdimg,
+  #itemeimg {
     width: 100%;
     height: auto;
     margin: auto;

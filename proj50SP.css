@@ -1,0 +1,788 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #fffff;
+  font-family: objektiv-mk2, sans-serif;
+  font-size: 20px;
+}
+
+  /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
+  /*    ~~   scroll down to see rwd for project MOSF page ~~   */
+
+/*===================================
+=== Project Title and Subhead ===
+======================================== */
+  .page-title{
+    display: block;
+    margin-top: 100px;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    padding: 100px 300px 0px 300px;
+  }
+
+  .page-title h1{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .page-title h2{
+    display: block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    margin: -10px 0px 0px 0px;
+  }
+
+  /*===================================
+  === Main Project Image ===
+  ======================================== */
+  .opening-img img{
+    display: block;
+    width: 100%;
+    margin: auto;
+
+  }
+
+  /*===================================
+  === Overview and Project Info ===
+  ======================================== */
+  .panel-1{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overview{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    padding: 0px 100px 0px 0px;
+  }
+
+  .overview h1{
+    display: inline-block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    background-color: #FFE3A6;
+  }
+
+  .overview p{
+    display: inline-block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    margin: 30px 0px 0px 0px;
+  }
+
+  .side-roles{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    padding: 0px 0px 0px 200px;
+  }
+
+  .side-roles h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .side-roles p{
+    display: inline-block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 40px 0px;
+  }
+
+  /*  ========== SUBSECTION: Link Styling ============  */
+  #link, #link:visited, #link2, #link2:visited{
+    color: #FFAF00;
+  }
+
+  #link{
+    font-size: 25px;
+  }
+
+  #link:hover, #link2:hover{
+    color: #1D252A;
+  }
+
+  #link2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /*===================================
+  === Long and Short Rules ===
+  ======================================== */
+
+  .long-rule hr{
+    width: 2000px;
+    background-color: #354B57;
+    height: 2px;
+    border: 0;
+    margin: auto;
+  }
+  .short-rule hr{
+    width: 1000px;
+    background-color: #354B57;
+    height: 1.5px;
+    border: 0;
+    margin: auto;
+  }
+
+  /*===================================
+  === Challenge Section ===
+  ======================================== */
+  .panel-2{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .challenge {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin: 0px 0px 0px 0px;
+    float: left;
+  }
+  .challenge h1{
+    display: inline-block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    background-color: #FFE3A6;
+  }
+    .challenge h3{
+    display: block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: #1D252A;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+  }
+
+/*  ========== SUBSECTION: Project Goals ============  */
+  .panel-3{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proj-goals{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .proj-goals h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .proj-goals ul{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .proj-goals li{
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .side-goals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px 0px 0px 50px;
+    margin-top: 80px;
+  }
+
+  .side-goals ul{
+    display: inline-block;
+  }
+
+  .side-goals li{
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #1D252A;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+  }
+
+/*  ========== SUBSECTION: Solution (XD Embed ============  */
+  .panel-4{
+    padding: 100px 300px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .solution{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .solution h2{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .solution h3{
+    display: block;
+    font-family: davis, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1D252A;
+    text-align: left;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .solution p{
+    font-size: 40;
+  }
+  /*    ~~   social media icons   ~~    */
+
+  #social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #1D252A;
+  }
+
+  #social:hover {
+    color: #7B6F87;
+  }
+
+  .MOSF-code iframe,
+  .MOSF-code-web iframe{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+    padding: 0px 0px;
+  }
+
+
+
+
+@media only screen and (max-width: 2100px){
+  /*===================================
+  === Common Items ===
+  ======================================== */
+  .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
+  .panel-6, .panel-7, .panel-8, .panel-9, .panel-10 {
+    padding: 100px 150px;
+  }
+
+  .overview h1, .challenge h1, .process h1, .process li, .side-process li{
+    font-size: 30px;
+  }
+  .proj-goals h2, .solution h2, .company-goals h2, .research h2, .vis h2, .wire h2, .feat h2{
+    font-size: 30px;
+  }
+  .solution h3, .research h3, .vis h3, .wire h3, .feat h3, .challenge h3{
+    font-size: 30px;
+  }
+
+  .overview p, .proj-goals li, .side-goals li, .company-goals li, .side-goals li, .research p, .vis p{
+    font-size: 20px;
+  }
+
+
+  /*===================================
+  === Project Title and Subhead ===
+  ======================================== */
+  .page-title h1{
+    font-size: 40px;
+  }
+
+  .page-title h2{
+    font-size: 25px;
+  }
+
+  /*===================================
+  === SECTION: Overview and Roles ===
+  ======================================== */
+  .side-roles{
+    padding: 0px 0px 0px 100px;
+  }
+
+  .side-roles h2{
+    font-size: 25px;
+  }
+
+  .side-roles p{
+    font-size: 20px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  /*===================================
+  === SECTION: Solution ===
+  ======================================== */
+  .MOSF-code iframe,
+  .MOSF-code-web iframe{
+    margin-top: 20px;
+  }
+
+  /*===================================
+  === Long and Short Rule===
+  ======================================== */
+  .long-rule hr{
+    width: 1100px;
+  }
+  .short-rule hr{
+    width: 600px;
+  }
+
+  /*===================================
+  === SECTION: The Process===
+  ======================================== */
+  .side-process{
+    margin: 0px 0px 0px 0px;
+  }
+}
+@media only screen and (max-width: 1200px){
+  /*===================================
+  === Common Items ===
+  ======================================== */
+  .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
+  .panel-6, .panel-7, .panel-8, .panel-9, .panel-10 {
+    padding: 75px 100px;
+  }
+
+  /*===================================
+  === SECTION: Overview and Roles ===
+  ======================================== */
+  .side-roles{
+    padding: 0px 0px 0px 75px;
+  }
+
+  .overview{
+    padding: 0px 0px 0px 0px;
+  }
+
+  /*===================================
+  === SECTION: The Process===
+  ======================================== */
+  .process ul{
+    padding: 0px 0px 0px 0px;
+  }
+
+  .side-process{
+    margin: 0px 0px 0px 0px;
+    padding-left: 50px;
+  }
+
+  .process li, .side-process li{
+    padding: 20px 0px;
+  }
+
+  /*===================================
+  === SECTION: Challenge ===
+  ======================================== */
+  .challenge h3{
+  padding: 20px 0px 0px 0px;
+  }
+
+  /*===================================
+  === Long and Short Rule===
+  ======================================== */
+  .long-rule hr{
+    width: 900px;
+  }
+  .short-rule hr{
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 992px){
+  /*===================================
+  === Common Items ===
+  ======================================== */
+  .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
+  .panel-6, .panel-7, .panel-8, .panel-9, .panel-10 {
+    padding: 50px 50px;
+  }
+
+  .overview h1, .challenge h1, .process h1, .process li, .side-process li{
+    font-size: 25px;
+  }
+
+  .proj-goals h2, .solution h2, .company-goals h2, .research h2, .vis h2, .wire h2, .feat h2{
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .solution h3, .research h3, .vis h3, .wire h3, .feat h3, .challenge h3{
+    font-size: 25px;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .overview p, .proj-goals li, .side-goals li, .company-goals li, .side-goals li, .research p, .vis p{
+    font-size: 15px;
+  }
+
+  /*===================================
+  === Project Title and Subhead ===
+  ======================================== */
+  .page-title h1{
+    font-size: 35px;
+  }
+
+  .page-title h2{
+    font-size: 20px;
+  }
+
+  /*===================================
+  === SECTION: Overview and Roles ===
+  ======================================== */
+  .side-roles h2{
+    font-size: 20px;
+  }
+
+  .side-roles p{
+    font-size: 15px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  /*===================================
+  === SECTION: The Process===
+  ======================================== */
+  .side-process{
+    padding-left: 0px;
+  }
+
+  /*===================================
+  === SECTION: Company and Project Goals ===
+  ======================================== */
+  .company-goals li, .proj-goals li, .side-goals li{
+    padding: 10px 0px;
+  }
+
+  .side-goals ul{
+    margin-top: 0px;
+  }
+
+  /*===================================
+  === SECTION: Research ===
+  ======================================== */
+  .research-img{
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  /*===================================
+  === SECTION: Visualization ===
+  ======================================== */
+  .vis-img{
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  /*===================================
+  === Long and Short Rule===
+  ======================================== */
+  .long-rule hr{
+    width: 700px;
+  }
+  .short-rule hr{
+    width: 400px;
+  }
+  
+  #social {
+    margin-top: 10px;
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 769px){
+  /*===================================
+  === Page Title ===
+  ======================================== */
+  .page-title{
+    padding: 0px 50px 0px 50px;
+  }
+
+  /*===================================
+  === Long and Short Rule ===
+  ======================================== */
+  .long-rule hr{
+    width: 600px;
+  }
+  .short-rule hr{
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 600px){
+  /*===================================
+  === Common Items ===
+  ======================================== */
+  .page-title, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
+  .panel-6, .panel-7, .panel-8 {
+    padding: 50px 30px;
+  }
+
+  .panel-9, .panel-10{
+    padding: 50px 10px;
+  }
+
+  .overview p, .proj-goals li, .side-goals li, .company-goals li, .side-goals li, .research p, .vis p{
+    font-size: 15px;
+  }
+
+  #link {
+    font-size: 15px;
+  }
+  #link2{
+    font-size: 20px;
+  }
+  #link:hover, #link2:hover {
+    color: #FFAF00;
+  }
+
+  /*===================================
+  === Project Title and Subhead ===
+  ======================================== */
+  .page-title h1{
+    font-size: 30px;
+  }
+
+  .page-title h2{
+    font-size: 15px;
+  }
+
+  /*===================================
+  === SECTION: Overview and Roles ===
+  ======================================== */
+  .panel-1{
+    display: inline-block;
+  }
+
+  .overview{
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .side-roles{
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .side-roles h2{
+    text-align: center;
+  }
+
+  .side-roles p{
+    text-align: center;
+  }
+
+  /*===================================
+  === SECTION: Challenge ===
+  ======================================== */
+  .challenge h3{
+    font-size: 20px;
+  }
+
+  /*===================================
+  === SECTION: Project Goals ===
+  ======================================== */
+  .panel-3{
+    display: block;
+  }
+
+  .proj-goals ul{
+    margin-bottom: 0px;
+  }
+
+  .side-goals{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+
+  /*===================================
+  === SECTION: Solution ===
+  ======================================== */
+  .solution p{
+    display: inline-block;
+    font-family: objektiv-mk2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    color: #1D252A;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .MOSF-code-web{
+    display: none;
+  }
+
+  /*===================================
+  === SECTION: The Process ===
+  ======================================== */
+  .process ul{
+    float: left;
+  }
+  .side-process ul{
+    padding: 0px 0px 0px 20px;
+  }
+
+  .process li, .side-process li{
+    font-size: 20px;
+  }
+
+  /*===================================
+  === SECTION: Company Goals ===
+  ======================================== */
+  .panel-6{
+    display: block;
+  }
+
+  .company-goals ul{
+    margin-bottom: 0px;
+  }
+
+  /*===================================
+  === Long and Short Rule===
+  ======================================== */
+  .long-rule hr{
+    width: 350px;
+  }
+  .short-rule hr{
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 370px){
+  /*===================================
+  === Common Items ===
+  ======================================== */
+  .panel-1, .panel-2, .panel-3, .panel-4, .panel-5,
+  .panel-6, .panel-7, .panel-8 {
+    padding: 30px 20px;
+  }
+
+  .panel-9, .panel-10{
+    padding: 30px 10px;
+  }
+
+  .overview h1, .challenge h1, .process h1, .process li, .side-process li{
+    font-size: 20px;
+  }
+
+  .proj-goals h2, .solution h2, .company-goals h2, .research h2, .vis h2, .wire h2, .feat h2{
+    font-size: 20px;
+  }
+
+  .solution h3, .research h3, .vis h3, .wire h3, .feat h3, .challenge h3{
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  /*===================================
+  === Project Title and Subhead ===
+  ======================================== */
+  .page-title{
+    padding: 30px 10px;
+  }
+  .page-title h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  /*===================================
+  === Long and Short Rule===
+  ======================================== */
+  .long-rule hr{
+    width: 100px;
+  }
+  .short-rule hr{
+    width: 50px;
+  }
+}
