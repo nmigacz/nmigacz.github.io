@@ -337,17 +337,6 @@ body{
     color: #7B6F87;
   }
 
-  .MOSF-code iframe,
-  .MOSF-code-web iframe{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0px 0px 0px;
-    padding: 0px 0px;
-  }
-
 
 
 
@@ -574,7 +563,7 @@ body{
   .short-rule hr{
     width: 400px;
   }
-  
+
   #social {
     margin-top: 10px;
     font-size: 35px;

@@ -269,7 +269,9 @@ body{
   }
   .itema,
   .itemb,
-  .itemc{
+  .itemc,
+  .itemd,
+  .iteme{
     grid-column: 1 / span 2;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -285,7 +287,9 @@ body{
 
   #itemaimg_small,
   #itembimg,
-  #itemcimg{
+  #itemcimg,
+  #itemdimg,
+  #itemeimg{
     max-width: 100%;
     height: auto;
     margin: auto;
