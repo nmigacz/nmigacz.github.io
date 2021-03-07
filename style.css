@@ -140,6 +140,7 @@ body{
   }
 
   /*    ~~   projects section   ~~    */
+
   .projects h2{
     font-family: davis, sans-serif;
     font-weight: 400;
@@ -179,19 +180,28 @@ body{
   .iteme{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  .itema :hover,
+  .itemb :hover,
+  .itemc :hover,
+  .itemd :hover,
+  .iteme :hover{
+    opacity: 80%;
+  }
+
   .itema{
     grid-column: 1 / span 2;
     overflow: hidden;
     background-color: #f1f0f0;
   }
   .itemb{
-    background-color: #5D79AE;
-  }
-  .itemc{
     background-color: #2b296c;
   }
+  .itemc{
+    background-color: #e8e8e8 ;
+  }
   .itemd {
-    background-color: #e8e8e8;
+    background-color: #5D79AE;
   }
   .iteme {
     background-color: #ffcb60;
@@ -201,11 +211,26 @@ body{
     display: none;
   }
 
-  #itemaimg,
-  #itembimg,
-  #itemcimg,
-  #itemdimg,
+  #itembimg{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 10px;
+  }
+
+  #itemcimg{
+    width: 100%;
+    height: auto;
+    margin: 30px 0px 0px 0px;
+  }
+
   #itemeimg {
+    width: 100%;
+    height: auto;
+    margin: 30px 0px 0px 0px;
+  }
+
+  #itemaimg,
+  #itemdimg{
     width: 100%;
     height: auto;
     margin: auto;
@@ -275,6 +300,14 @@ body{
     grid-column: 1 / span 2;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .itema :hover,
+  .itemb :hover,
+  .itemc :hover,
+  .itemd :hover,
+  .iteme :hover{
+    opacity: 100%;
   }
 
   #itemaimg{

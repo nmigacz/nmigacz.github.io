@@ -27,6 +27,38 @@ body{
   margin-top: -40px;
 }
 
+.title p{
+  margin: auto;
+  text-align: center;
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
+  color: #1D252A;
+  margin: 20px 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*    ~~   content display  ~~    */
 
 .row {
