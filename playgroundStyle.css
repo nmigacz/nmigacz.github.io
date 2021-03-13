@@ -39,7 +39,9 @@ body{
   color: #1D252A;
   margin: 20px 150px;
 }
-
+span{
+  font-size: 20px;
+}
 /*    ~~   page Links  ~~    */
 .pgLinks{
   display: flex;
@@ -188,7 +190,7 @@ h2 {
   }
 
   h2{
-    font-size: 30px;
+    font-size: 35px;
   }
 
 
@@ -197,8 +199,8 @@ h2 {
   }
 
   #uiImg{
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 225px;
   }
 
   #illImg, #designImg{
@@ -237,7 +239,7 @@ h2 {
   }
 
   h2{
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .ui, .indesign, .illustrator{
@@ -248,6 +250,10 @@ h2 {
     width: 250px;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+  span{
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 370px){
