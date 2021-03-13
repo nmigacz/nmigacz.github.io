@@ -5,10 +5,12 @@
    <!--- Basic Page Needs  -->
    <meta charset="utf-8">
 	<title>Portfolio Playground</title>
-  <link rel="stylesheet" href="https://use.typekit.net/lrz7lws.css">
-  <link rel="stylesheet" href="headerStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="playgroundStyle.css">
   <script src="playground.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/lrz7lws.css">
+  <link rel="stylesheet" href="headerStyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -53,135 +55,324 @@
    <div class="title">
      <h1>playground</h1>
      <hr>
-     <p>Welcome to the playground! Here you will find work which is not really classified as a project but Nick believes it deserves a space in his portfolio. If you are looking for his InDesign, Illustrator or smaller UI work, you will find it here. Grab a pale and shovel and have fun!</p>
+     <p>Welcome to the playground! Here you will find work which is not really classified as a project but Nick believes it deserves a space in his portfolio. If you are looking for his UI Concepts, Design and Illustration work you will find it here. Click any of the links below to get to the section faster!</p>
+     <div class="pgLinks">
+         <a href="#ui"><h2 class="h2Link">UI Concepts</h2></a>
+         <a href="#design"><h2 class="h2Link">Design</h2></a>
+         <a href="#illustrate"><h2 class="h2Link">Illustration</h2></a>
+     </div>
    </div>
-<div class="uiConcepts">
-  <h2>UI Concepts</h2>
+  <hr id="split">
+   <div class="ui" id="ui">
+     <h2>UI Concepts</h2>
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#YcID">
+        <img src="img/ui/yokooCover.png" alt="Yokoo Website" id="uiImg">
+     </button>
 
-</div>
-<div class="InDesign">
-  <h2>InDesign</h2>
-  <div class="container">
-    <div class="row">
-      <div class="proj1">
-        <button type="button" id="view-pdf-btn" onclick="previewFile()" style="cursor: pointer; width: 120px; padding: 10px; font-family: 'Arial'; font-size: 15px; color: #ededed; border-radius: 5px; border: 1px #404040; background-color:#1473e6; margin: 100px 0 0 80px;" disabled>Conversation Pits Magazine</button>
-      <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-</script>
+     <!-- Modal -->
+     <div class="modal" id="YcID" tabindex="-1">
+       <div class="modal-dialog" style="max-width: 75%;" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">Tadanori Yokoo Exhibition Website Concept 2020</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <object data="img/ui/yokooProj.pdf" width="1000px" height="700px"></object>
+           </div>
+           <div class="modal-footer">
+             <p>Made with Adobe InDesign and Illustrator</p>
+           </div>
+         </div>
+       </div>
+     </div>
+
+<!-- +++++++++++ -->
+
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MrID">
+        <img src="img/ui/mushroomUI.png" alt="Mushroom Info Page" id="uiImg">
+     </button>
+
+     <!-- Modal -->
+     <div class="modal" id="MrID" tabindex="-1">
+       <div class="modal-dialog" style="max-width: 75%;" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">Mushroom Information Page Concept 2020</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <img src="img/ui/mushroomUI.png" width="1000px" height="700px">
+           </div>
+           <div class="modal-footer">
+             <p>Made with Figma</p>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- +++++++++++ -->
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#HcID">
+             <img src="img/ui/HealthCalCover.png" alt="Health Calendar" id="uiImg">
+          </button>
+
+          <!-- Modal -->
+          <div class="modal" id="HcID" tabindex="-1">
+            <div class="modal-dialog" style="max-width: 75%;" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Health Calendar App Concept 2020</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <object data="img/ui/healthCal.pdf" width="1000px" height="700px"></object>
+                </div>
+                <div class="modal-footer">
+                  <p>Made with Adobe XD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+   </div>
+
+   <hr id="split">
+
+    <div class="indesign" id="design">
+      <h2>Design</h2>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#CpID">
+         <img src="img/indesign/CpCover.png" alt="Conversation Pits" id="designImg">
+      </button>
+
+      <!-- Modal -->
+      <div class="modal" id="CpID" tabindex="-1">
+        <div class="modal-dialog" style="max-width: 60%;" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Conversation Pits Catalog 2020</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <object data="img/indesign/conversationPits.pdf" width="600px" height="1000px"></object>
+            </div>
+            <div class="modal-footer">
+              <p>Made with Adobe InDesign</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-</div>
-<div class="Illustrator">
-  <h2>Illustrator</h2>
+      <!-- +++++++++++ -->
 
-</div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EpID">
+         <img src="img/indesign/ecopayCover.png" alt="Ecopay Branding Guide" id="designImg">
+      </button>
 
+      <!-- Modal -->
+      <div class="modal" id="EpID" tabindex="-1">
+        <div class="modal-dialog" style="max-width: 60%;" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Ecopay Credit Card Branding Guide 2020</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <object data="img/indesign/ecopay.pdf" width="600px" height="1000px"></object>
+            </div>
+            <div class="modal-footer">
+              <p>Made with Adobe InDesign, Photoshop & Illustrator</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- +++++++++++ -->
 
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#OpID">
+         <img src="img/indesign/OpCover.png" alt="Erik Spiekermann Poster" id="designImg">
+      </button>
 
+      <!-- Modal -->
+      <div class="modal" id="OpID" tabindex="-1">
+        <div class="modal-dialog" style="max-width: 60%;" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Erik Spiekermann Poster 2020</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <object data="img/indesign/officinaPoster.pdf" width="700px" height="945px"></object>
+            </div>
+            <div class="modal-footer">
+              <p>Made with Adobe InDesign</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
-
-<!--- Artwork
-   <div class="row">
-  <div class="column">
-    <div class="imgGroup">
-    <img id="itemimg1" src="img/healthCal2.png" onclick="openModal(); currentSlide(1)" class="hover-shadow" alt="Health Calendar UI">
-    <div class="overlay">
-      <div class="text">Health Calendar UI
-    </div>
-  </div>
-  </div>
-  <div class="imgGroup">
-    <img id="itemimg1" src="img/jubilation.png" onclick="openModal(); currentSlide(2)" class="hover-shadow" alt="Jubilation.">
-    <div class="overlay">
-      <div class="text">Jubilation.</div>
-  </div>
-  </div>
-  <div class="imgGroup">
-    <img id="itemimg2" src="img/latinPoster.png" onclick="openModal(); currentSlide(3)" class="hover-shadow" alt="How do you get your hair to do that?">
-    <div class="overlay">
-      <div class="text">"How did you get your hair to do that?"</div>
-  </div>
-  </div>
-  </div>
-
-  <div class="column">
-    <div class="imgGroup">
-    <img id="itemimg3" src="img/mushroomUI.png" onclick="openModal(); currentSlide(4)" class="hover-shadow" alt="Mushroom Information Page UI">
-    <div class="overlay">
-      <div class="text">Mushroom Information Page UI</div>
-    </div>
-    </div>
-    <div class="imgGroup">
-      <img id="itemimg4" src="img/SkylineMag.png" onclick="openModal(); currentSlide(5)" class="hover-shadow" alt="Skyline Magazine Cover">
-      <div class="overlay">
-        <div class="text">Skyline Magazine Cover</div>
-    </div>
-    </div>
-  </div>
-</div>
--->
-
-<!-- The Modal/Lightbox
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <img src="img/healthCal2.png" style="width:100%" alt="Health Calendar UI">
-      <div class="overlay">Health Calendar UI</div>
     </div>
 
-    <div class="mySlides">
-      <img src="img/jubilation.png"  style="width:100%" alt="Jubilation.">
-      <div class="overlay">Jubilation.</div>
-    </div>
+    <hr id="split">
 
-    <div class="mySlides">
-      <img src="img/latinPoster.png" style="width:100%" alt="How did you get your hair to do that?">
-      <div class="overlay">"How did you get your hair to do that?"</div>
-    </div>
+     <div class="illustrator" id="illustrate">
+       <h2>Illustration</h2>
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LatinAI">
+          <img src="img/ai/latinPoster.png" alt="Latin Poster" id="illImg">
+       </button>
 
-    <div class="mySlides">
-      <img src="img/mushroomUI.png"  style="width:100%" alt="Mushroom Information Page UI">
-      <div class="overlay">Mushroom Information Page UI</div>
-    </div>
-
-    <div class="mySlides">
-      <img src="img/SkylineMag.png"  style="width:100%" alt="Skyline Magazine Cover">
-    </div>
-
-  </div>
-</div>
--->
-
-<!--   <div class="grid">
-
-       <div class="itema">
-         <img id="itemaimg" src="img/latinPoster.png" alt="Latin Poster">
+       <!-- Modal -->
+       <div class="modal" id="LatinAI" tabindex="-1">
+         <div class="modal-dialog" style="max-width: 60%;" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">"How did you get your hair to do that?" 2019</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <img src="img/ai/latinPoster.png" alt="Latin Poster">
+             </div>
+             <div class="modal-footer">
+               <p>Made with Adobe Illustrator</p>
+             </div>
+           </div>
+         </div>
        </div>
-       <div class="itemb">
-         <img id="itembimg" src="img/latinPoster.png" alt="8 Ride Redesign Project">
+
+       <!-- +++++++++++ -->
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#JuAI">
+             <img src="img/ai/jubilation.png" alt="Jubilation Print" id="illImg">
+          </button>
+
+          <!-- Modal -->
+          <div class="modal" id="JuAI" tabindex="-1">
+            <div class="modal-dialog" style="max-width: 60%;" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Jubilation 2019</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/ai/jubilation.png" alt="jubilation Print">
+                </div>
+                <div class="modal-footer">
+                  <p>Made with Adobe Illustrator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- +++++++++++ -->
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SmAI">
+             <img src="img/ai/SkylineMag.png" alt="Skyline Magazine Cover" id="illImg">
+          </button>
+
+          <!-- Modal -->
+          <div class="modal" id="SmAI" tabindex="-1">
+            <div class="modal-dialog" style="max-width: 60%;" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Skyline Magazine Cover 2019</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/ai/SkylineMag.png" alt="Skyline Magazine ">
+                </div>
+                <div class="modal-footer">
+                  <p>Made with Adobe Illustrator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+     <!-- +++++++++++ -->
+
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SpAI">
+        <img src="img/ai/selfportrait.jpeg" alt="Self Portrait" id="illImg">
+     </button>
+
+     <!-- Modal -->
+     <div class="modal" id="SpAI" tabindex="-1">
+       <div class="modal-dialog" style="max-width: 60%;" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">Self Portrait 2018</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <img src="img/ai/selfportrait.jpeg" alt="Self Portrait" style="width: 700px; height:945px;">
+           </div>
+           <div class="modal-footer">
+             <p>Made with Adobe Photoshop</p>
+           </div>
+         </div>
        </div>
-       <div class="itemc">
-         <img id="itemcimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
+     </div>
+
+     <!-- +++++++++++ -->
+
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MgAI">
+        <img src="img/ai/mgCover.png" alt="Mushroom Girl Print" id="illImg">
+     </button>
+
+     <!-- Modal -->
+     <div class="modal" id="MgAI" tabindex="-1">
+       <div class="modal-dialog" style="max-width: 60%;" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">Cottage Woman 2021</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <object data="img/ai/mushroomGirl.pdf" width="700px" height="945px"></object>
+           </div>
+           <div class="modal-footer">
+             <p>Made with Procreate</p>
+           </div>
+         </div>
        </div>
-       <div class="itemd">
-         <img id="itemdimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
+     </div>
+
+     <!-- +++++++++++ -->
+
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#HwID">
+        <img src="img/ai/HwCover.png" alt="Hawaii Backgrounds" id="illImg">
+     </button>
+
+     <!-- Modal -->
+     <div class="modal" id="HwID" tabindex="-1">
+       <div class="modal-dialog" style="max-width: 60%;" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">Hawaii Inspired Backgrounds 2020</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <object data="img/ai/hawaiiBackgrounds.pdf" width="700px" height="945px"></object>
+           </div>
+           <div class="modal-footer">
+             <p>Made with Adobe Illustrator</p>
+           </div>
+         </div>
        </div>
-       <div class="iteme">
-         <img id="itemeimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
-       </div>
-       <div class="itemf">
-         <img id="itemfimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project">
-       </div>
-   </div> -->
+     </div>
+
+     </div>
+
 
    <div class="footer">
    <footer>

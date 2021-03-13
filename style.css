@@ -238,7 +238,7 @@ body{
 
 @media only screen and (max-width: 2100px){
   .opening{
-    margin-top: 150px;
+    margin-top: 115px;
   }
   #type1{
   font-size: 170px;
@@ -270,7 +270,7 @@ body{
 }
 @media only screen and (max-width: 992px){
   .opening{
-    margin-top: 100px;
+    margin-top: 90px;
   }
   #type1{
     font-size: 110px;
