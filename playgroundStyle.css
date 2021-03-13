@@ -156,16 +156,23 @@ h2 {
 @media only screen and (max-width: 1200px){
   h2{
     text-align: center;
+    margin-left: 0px;
   }
+
   .ui, .indesign, .illustrator{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 50px 50px;
   }
+
 }
 @media only screen and (max-width: 992px){
   .title h1{
     font-size: 50px;
+    margin-top: 50px;
   }
 
   .title p{
@@ -176,26 +183,27 @@ h2 {
     font-size: 25px;
   }
 
+  .h2Link:hover{
+    color: #1D252A;
+  }
+
   h2{
     font-size: 30px;
   }
 
-  .ui, .indesign, .illustrator{
-    padding: 50px 50px;
-  }
 
   #split {
     width: 400px;
   }
 
   #uiImg{
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 250px;
   }
 
   #illImg, #designImg{
     width: 300px;
-    height: 450px;
+    height: 400px;
   }
 
   .modal-body img{
@@ -211,15 +219,17 @@ h2 {
 }
 @media only screen and (max-width: 600px){
   .title h1{
-    font-size: 35px;
+    font-size: 40px;
+    margin-top: 20px;
   }
 
   .title hr{
-    width: 200px;
+    width: 250px;
   }
 
   .title p{
-    font-size: 12px;
+    font-size: 15px;
+    margin: 20px 20px;
   }
 
   .h2Link{
