@@ -243,7 +243,7 @@ h2 {
   }
 
   .ui, .indesign, .illustrator{
-    padding: 25px 25px;
+    padding: 25px 10px;
   }
 
   #split {
@@ -257,5 +257,7 @@ h2 {
   }
 }
 @media only screen and (max-width: 370px){
-
+  .ui, .indesign, .illustrator{
+    padding: 25px 0px;
+  }
 }
