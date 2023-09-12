@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: #fffff;
+  background: #ffffff;
   font-family: objektiv-mk2, sans-serif;
 }
 
@@ -375,6 +375,7 @@ body{
   text-align: center;
   display: inline-block;
 }
+
 #type2{
   display: inline-block;
   width: 100%;
