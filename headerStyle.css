@@ -1,11 +1,26 @@
 body{
   margin: 0;
   padding: 0;
-  background: #fffff;
+  background: #ffffff;
   font-family: objektiv-mk2, sans-serif;
   font-size: 20px;
 }
 
+.breadcrumbs{
+  color:#868686;
+  margin-bottom: 3rem;
+}
+h6 a, h6 a:visited{
+  text-decoration: none;
+  color: #868686;
+}
+
+h6 a:hover{
+  text-decoration: underline;
+}
+.current{
+  color: #1D252A;
+}
 /*    ~~   Universal Header & Footer for all pages    ~~   */
 /*    ~~   scroll down to see rwd for Header and Footer    ~~   */
 .dropdown,
@@ -24,7 +39,7 @@ display: none;
 #name-logo a{
   font-size: 28px;
   color: #1D252A;
-  float:left;
+  float: left;
   text-decoration: none;
   transition:color 0.50s ease;
   display: inline-block;
@@ -169,6 +184,7 @@ display: none;
   background-color: #ffff;
   border: none;
   padding: 10px 10px;
+  color: #1D252A !important;
 }
 .centerbtn{
   display: flex;              /* establish flex container */
@@ -206,5 +222,4 @@ display: none;
 .show {
   display: block;
   position: absolute;
-}
 }

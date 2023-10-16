@@ -339,8 +339,8 @@ body{
     font-size: 20px;
   }
 
-  .intro-p{
-    font-size: 15px;
+  .intro-p, .intro-p span{
+    font-size: 15px !important;
   }
 
   .grid{
