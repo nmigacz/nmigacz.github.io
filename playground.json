@@ -1,0 +1,114 @@
+[
+    {
+        "code": "ux",
+        "url": "TadanoriYokooExhibitionWebsiteConcept",
+        "type": "UI/UX",
+        "title": "Tadanori Yokoo Exhibition Website Concept",
+        "medium": "Made with Adobe InDesign and Illustrator",
+        "content": ["img/ui/yokoo/yokooCover.png", "img/ui/yokoo/yokoo2.png", "img/ui/yokoo/yokoo3.png", "img/ui/yokoo/yokoo4.png", "img/ui/yokoo/yokoo5.png", "img/ui/yokoo/yokoo6.png"]
+    }, 
+    {
+        "code": "ux",
+        "url": "MushroomInformationPageConcept",
+        "type": "UI/UX",
+        "title": "Mushroom Information Page Concept",
+        "medium": "Made with Figma",
+        "content": ["img/ui/mushroomUI.png"]
+    }, 
+    {
+        "code": "ux",
+        "url": "HealthCalendarAppConcept",
+        "type": "UI/UX",
+        "title": "Health Calendar App Concept",
+        "medium": "Made with Figma",
+        "content": ["img/ui/healthcal/healthCalCover.png", "img/ui/healthcal/healthcal2.png"]
+    },
+    {
+        "code":"design",
+        "url": "ConversationPitsCatalog",
+        "type": "Design",
+        "title": "Conversation Pits Catalog",
+        "medium": "Made with Adobe InDesign",
+        "content": ["img/indesign/conversationpits/CpCover.png", "img/indesign/conversationpits/cp2.png", "img/indesign/conversationpits/cp3.png", "img/indesign/conversationpits/cp4.png", "img/indesign/conversationpits/cp5.png", "img/indesign/conversationpits/cp6.png", "img/indesign/conversationpits/cp7.png"]
+    },
+    {
+        "code":"design",
+        "url": "EcopayCreditCardBrandingGuide",
+        "type": "Design",
+        "title": "Ecopay Credit Card Branding Guide",
+        "medium": "Made with Adobe InDesign, Photoshop & Illustrator",
+        "content": ["img/indesign/ecopay/ecopayCover.png", "img/indesign/ecopay/eco2.png", "img/indesign/ecopay/eco3.png", "img/indesign/ecopay/eco4.png", "img/indesign/ecopay/eco5.png", "img/indesign/ecopay/eco6.png", "img/indesign/ecopay/eco7.png", "img/indesign/ecopay/eco8.png"]
+    },
+    {
+        "code":"design",
+        "url": "ErikSpiekermannPoster",
+        "type": "Design",
+        "title": "Erik Spiekermann Poster",
+        "medium": "Made with Adobe InDesign",
+        "content": ["img/indesign/officina/OpCover.png"]
+    },
+    {
+        "code":"illustration",
+        "url": "Howdidyougetyourhairtodothat",
+        "type": "Illustration",
+        "title": "How did you get your hair to do that?",
+        "medium": "Made with Adobe Illustrator",
+        "content": ["img/ai/latinPoster.png"]
+    },
+    {
+        "code":"illustration",
+        "url": "Jubilation",
+        "type": "Illustration",
+        "title": "Jubilation",
+        "medium": "Made with Adobe Illustrator",
+        "content": ["img/ai/jubilation.png"]
+    },
+    {
+        "code":"illustration",
+        "url": "SkylineMagazineCover",
+        "type": "Illustration",
+        "title": "Skyline Magazine Cover",
+        "medium": "Made with Adobe Illustrator",
+        "content": ["img/ai/SkylineMag.png"]
+    },
+    {
+        "code":"illustration",
+        "url": "SelfPortrait",
+        "type": "Illustration",
+        "title": "Self Portrait",
+        "medium": "Made with Adobe Photoshop",
+        "content": ["img/ai/spCover.png"]
+    },
+    {
+        "code":"illustration",
+        "url": "CottageWoman",
+        "type": "Illustration",
+        "title": "Cottage Woman",
+        "medium": "Made with Procreate",
+        "content": ["img/ai/mgCover.png"]
+    },
+    {
+        "code":"illustration",
+        "url": "HawaiiInspiredBackgrounds",
+        "type": "Illustration",
+        "title": "Hawaii Inspired Backgrounds",
+        "medium": "Made with Adobe Illustrator",
+        "content": ["img/ai/hawaiiBackgrounds/hawaii1.png", "img/ai/hawaiiBackgrounds/hawaii2.png", "img/ai/hawaiiBackgrounds/hawaii3.png", "img/ai/hawaiiBackgrounds/hawaii4.png", "img/ai/hawaiiBackgrounds/hawaii5.png", "img/ai/hawaiiBackgrounds/hawaii6.png", "img/ai/hawaiiBackgrounds/hawaii7.png", "img/ai/hawaiiBackgrounds/hawaii8.png", "img/ai/hawaiiBackgrounds/hawaii9.png"]
+    },
+    {
+        "code":"animation",
+        "url": "ResearchProjectConflictMineralMining",
+        "type": "Animation",
+        "title": "Research Project: Conflict Mineral Mining",
+        "medium": "Made with Adobe Illustrator",
+        "content": ["img/animation/mining.png", "<div class='ytVideo'><iframe width='560' height='315' src='https://www.youtube.com/embed/pct3V67Xn64?si=RIRN_7UFHScCRJJ3' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe></div>"]
+    },
+    {
+        "code":"animation",
+        "url": "PeaceSummit",
+        "type": "Animation",
+        "title": "Chicago Area Peace Action: Peace Summit, 2021 GIF",
+        "medium": "Made with Adobe Illustrator",
+        "content": ["img/animation/peace_summit.GIF", "<img src='img/animation/peace_summit.GIF'"]
+    }
+]

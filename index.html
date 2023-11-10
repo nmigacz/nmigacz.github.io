@@ -1,128 +1,118 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171415539-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171415539-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-171415539-1');
-</script>
+    gtag('config', 'UA-171415539-1');
+  </script>
 
-   <!--- Basic Page Needs  -->
-   <meta charset="utf-8">
-	<title>Nick Migacz Portfolio</title>
-  <link rel="stylesheet" href="https://use.typekit.net/lrz7lws.css">
-  <link rel="stylesheet" href="headerStyle.css">
-  <link rel="stylesheet" href="style.css">
+  <!--- Basic Page Needs  -->
+  <meta charset="utf-8">
+  <title>Nick Migacz Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#header-section").load("header.html");
+      $("#footer-section").load("footer.html");
+    });
+  </script>
   <script src="init.js"></script>
   <script src="https://kit.fontawesome.com/a84ae8e4ce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/lrz7lws.css">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to Nick Migacz's portfolio website. Nick currently works for Ann & Robert H. Lurie Children's Hospital of Chicago Foundation. Here you will find the programming and design projects Nick is most proud of.">
+  <meta name="description"
+    content="Welcome to Nick Migacz's portfolio website. Nick currently works for Ann & Robert H. Lurie Children's Hospital of Chicago Foundation. Here you will find the programming and design projects Nick is most proud of.">
 
 </head>
 
 <body>
   <!--- Header  -->
-  <div class="header">
-  <!--- Name Logo  -->
-  <span id="name-logo">
-   <a href="index.html">Nick Migacz</a>
-   </span>
-  <!--- Navigation Bar for 992 px and up  -->
-  <span class="nav-bar">
-   <ul>
-     <div class="list">
-     <li><a href="#projSection">projects</a></li>
-     <li><a href="playground.html">playground</a></li>
-     <li><a href="NickMigacz_Resume.pdf" target="_blank">resume</a></li>
-     <li><a href="aboutMe.html">about</a></li>
-     </div>
-   </ul>
-   </span>
-   </div>
-   <!--- Header up to 992px  -->
-   <div class="header-s">
-   <span class="ss-name">
-    <a href="index.html">Nick Migacz</a>
-    </span>
-   <div class="dropdown">
-     <div class="centerbtn">
-   <button onclick="myFunction()" class="dropbtn" style="color: #1D252A!important;">menu</button>
- </div>
-   <div id="myDropdown" class="dropdown-content">
-     <a href="#projSection">projects</a>
-     <a href="playground.html">playground</a>
-     <a href="NickMigacz_Resume.pdf" target="_blank">resume</a>
-     <a href="aboutMe.html">about</a>
-   </div>
-   </div>
- </div>
+  <div id="header-section">
+    <!--- Header content loads here  -->
+  </div>
 
- <!--- Homepage Title and Animation  -->
-<div class="opening">
-<div id="type1">
-  Hello.
-</div>
-<div id="type2">
-  <p>I'm Nick Migacz</p> <br> I am a
-    <div class="slidingVertical">
-      <span>Designer</span>
-      <span>Developer</span>
-      <span>Illustrator</span>
+  <!--- Homepage Title and Animation  -->
+  <div class="opening">
+    <div id="type1">
+      Hello.
     </div>
-</div>
-</div>
- <!--- Intro Paragraph  -->
-<div class="intro-p">
-  <p>Nick currently works for Ann &amp; Robert H. Lurie Children's Hospital Foundation.<br>
-    Outside of the office, he loves spending time on the Chicago lakefront, <br>
-    hosting dinner parties and reading. <br> <br>
-  <span style="font-size: 20px; font-weight: 600;">Scroll down to see Nick's projects or head to playground to see design and illustration work!</span></p>
-</div>
-<div class="intro-p-small">
-  <p>Nick currently works for Ann &amp; Robert H. Lurie Children's Hospital Foundation. Outside of the office, he loves spending time on the Chicago lakefront, hosting dinner parties and reading.<br> <br><span style="font-size: 12px; font-weight: 500;">Scroll down to see Nick's projects or head to playground to see design and illustration work!</span></p>
+    <div id="type2">
+      <p>I'm Nick Migacz</p> <br> I am a
+      <div class="slidingVertical">
+        <span>Designer</span>
+        <span>Developer</span>
+        <span>Illustrator</span>
+      </div>
+    </div>
+  </div>
+  <!--- Intro Paragraph  -->
+  <div class="intro-p">
+    <p>Nick currently works for Ann &amp; Robert H. Lurie Children's Hospital Foundation.<br>
+      Outside of the office, he loves spending time on the Chicago lakefront, <br>
+      hosting dinner parties and reading. <br> <br>
+      <span style="font-size: 20px; font-weight: 600;">Scroll down to see Nick's projects or head to playground to see
+        design and illustration work!</span></p>
+  </div>
+  <div class="intro-p-small">
+    <p>Nick currently works for Ann &amp; Robert H. Lurie Children's Hospital Foundation. Outside of the office, he
+      loves spending time on the Chicago lakefront, hosting dinner parties and reading.<br> <br><span
+        style="font-size: 12px; font-weight: 500;">Scroll down to see Nick's projects or head to playground to see
+        design and illustration work!</span></p>
 
-</div>
+  </div>
 
- <!--- Social Media Icons  -->
-<div class="social">
-  <ul>
-     <li id="icon"><a href="https://www.linkedin.com/in/nicholas-migacz-52ab9016a/" target="_blank" rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i class="fab fa-linkedin"></i></span></a></li>
+  <!--- Social Media Icons  -->
+  <div class="social">
+    <ul>
+      <li id="icon"><a href="https://www.linkedin.com/in/nicholas-migacz-52ab9016a/" target="_blank"
+          rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i
+              class="fab fa-linkedin"></i></span></a></li>
 
-     <!--<li id="icon"><a href="https://www.instagram.com/nhm.design/?hl=en" target="_blank" rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i class="fab fa-instagram"></i></span></a></li> -->
+      <!--<li id="icon"><a href="https://www.instagram.com/nhm.design/?hl=en" target="_blank" rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i class="fab fa-instagram"></i></span></a></li> -->
 
-     <li id="icon"><a href="mailto:nicholas.migacz@gmail.com?"><span style="font-size: 40px; color: #1D252A;"><i class="far fa-envelope"></i></span></a></li>
+      <li id="icon"><a href="mailto:nicholas.migacz@gmail.com?"><span style="font-size: 40px; color: #1D252A;"><i
+              class="far fa-envelope"></i></span></a></li>
 
-     <li id="icon"><a href="https://github.com/nmigacz?tab=repositories" target="_blank" rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i class="fab fa-github-square"></i></span></a></li>
+      <li id="icon"><a href="https://github.com/nmigacz?tab=repositories" target="_blank"
+          rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i
+              class="fab fa-github-square"></i></span></a></li>
 
-     <li id="icon"><a href="https://www.goodreads.com/user/show/108672062-nick" target="_blank" rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i class="fab fa-goodreads"></i></span></a></li>
-  </ul>
+      <li id="icon"><a href="https://www.goodreads.com/user/show/108672062-nick" target="_blank"
+          rel="noopener noreferrer"><span style="font-size: 40px; color: #1D252A;"><i
+              class="fab fa-goodreads"></i></span></a></li>
+    </ul>
   </div>
 
 
 
- <!--- Projects Section  -->
- <div class="projects">
-   <div class="projTitle">
-     <h2 id="projSection">projects</h2>
-   </div>
-  <hr>
+  <!--- Projects Section  -->
+  <div class="projects">
+    <div class="projTitle">
+      <h2 id="projSection">projects</h2>
+    </div>
+    <hr>
   </div>
 
-<div class="grid">
+  <div class="grid">
     <div class="itema">
       <a href="proj50SP.html"><img id="itemaimg" src="img/Portfolio50SP.png" alt="50 Stolen Plays Project"></a>
-      <a href="proj50SP.html"><img id="itemaimg_small" src="img/Portfolio50SP_small.png" alt="50 Stolen Plays Project"></a>
+      <a href="proj50SP.html"><img id="itemaimg_small" src="img/Portfolio50SP_small.png"
+          alt="50 Stolen Plays Project"></a>
     </div>
     <div class="itemb">
-      <a href="projMOSF.html"><img id="itembimg" src="img/PortfolioMOSF_small.png" style="width: 95%; " alt="8 Ride Redesign Project"></a>
+      <a href="projMOSF.html"><img id="itembimg" src="img/PortfolioMOSF_small.png" style="width: 95%; "
+          alt="8 Ride Redesign Project"></a>
     </div>
     <div class="itemc">
       <a href="proj8Ride.html"><img id="itemcimg" src="img/Portfolio8Ride.png" alt="8 Ride Redesign Project"></a>
@@ -134,12 +124,10 @@
     <div class="iteme">
       <a href="projCSRev.html"><img id="itemeimg" src="img/PortfolioCSRev.png" alt="The CS Reviewer Project"></a>
     </div>-->
-</div>
-<div class="footer">
-<footer>
-  <small>&copy; Copyright 2023, Nick Migacz</small>
-</footer>
-</div>
+  </div>
+  <div id="footer-section">
+    <!--- Footer content here  -->
+  </div>
 
 </body>
 

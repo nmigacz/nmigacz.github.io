@@ -17,9 +17,15 @@
 
    <!--- Basic Page Needs  -->
    <meta charset="utf-8">
-	<title>About: Nick Migacz</title>
+  <title>About: Nick Migacz</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+      $(function () {
+          $("#header-section").load("header.html");
+          $("#footer-section").load("footer.html");
+      });
+  </script>
   <link rel="stylesheet" href="https://use.typekit.net/lrz7lws.css">
-  <link rel="stylesheet" href="headerStyle.css">
   <link rel="stylesheet" href="aboutStyle.css">
   <script src="init.js"></script>
   <script src="https://kit.fontawesome.com/a84ae8e4ce.js" crossorigin="anonymous"></script>
@@ -29,41 +35,9 @@
 </head>
 
 <body>
-  <div class="header">
-    <!--- Name Logo  -->
-    <span id="name-logo">
-     <a href="index.html">Nick Migacz</a>
-     </span>
-    <!--- Navigation Bar for 992 px and up  -->
-    <span class="nav-bar">
-     <ul>
-       <div class="list">
-       <li><a href="index.html#projSection">projects</a></li>
-       <li><a href="playground.html">playground</a></li>
-       <li><a href="NickMigacz_Resume.pdf" target="_blank">resume</a></li>
-       <li><a href="aboutMe.html">about</a></li>
-       </div>
-     </ul>
-     </span>
-     </div>
-     <!--- Header up to 992px  -->
-     <div class="header-s">
-     <span class="ss-name">
-      <a href="index.html">Nick Migacz</a>
-      </span>
-     <div class="dropdown">
-       <div class="centerbtn">
-     <button onclick="myFunction()" class="dropbtn">menu</button>
-   </div>
-     <div id="myDropdown" class="dropdown-content">
-       <a href="index.html#projSection">projects</a>
-       <a href="playground.html">playground</a>
-       <a href="NickMigacz_Resume.pdf" target="_blank">resume</a>
-       <a href="aboutMe.html">about</a>
-     </div>
-     </div>
-   </div>
-
+  <div id="header-section">
+    <!--- Header content loads here  -->
+</div>
    <div class="title">
      <h1>about</h1>
      <hr>
@@ -94,10 +68,8 @@
 
 
 
-   <div class="footer">
-   <footer>
-     <small>&copy; Copyright 2023, Nick Migacz</small>
-   </footer>
-   </div>
+   <div id="footer-section">
+    <!--- Footer content here  -->
+</div>
 </body>
 </html>

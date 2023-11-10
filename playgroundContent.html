@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!--- Basic Page Needs  -->
+    <meta charset="utf-8">
+    <title>Portfolio Playground</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header-section").load("header.html");
+            $("#footer-section").load("footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="playgroundStyle.css">
+    <script src="playground.js"></script>
+    <script src="init.js"></script>
+    <script src="playgroundTest.js"></script>
+    <script src="playground.json"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/lrz7lws.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="header-section">
+        <!--- Header content loads here  -->
+    </div>
+    <div class="body-wrapper">
+        <!-- Default Dynamic Section -->
+        <div id="default-content" style="display:none;">
+            Whoops! Let's try that again, go back to the <a href="playground.html">playground</a> and pick a project to
+            learn more about.
+        </div>
+        <!-- Dynamic Section 1 -->
+        <div id="dynamic-content" class="dynamic-content" style="display:none;">
+
+        </div>
+    </div>
+    </div>
+    <div id="footer-section">
+        <!--- Footer content here  -->
+    </div>
+    <script>
+        window.addEventListener("load", (event) => {
+            $('.ui').addClass('open');
+            $('.ui-btn').addClass('active');
+        });
+        var getTab = function (view) {
+            let tabs = [".ui", ".indesign", ".illustrator", ".animation"];
+            for (i = 0; i < tabs.length; i++) {
+                if (view != tabs[i] && $(tabs[i]).hasClass('open')) {
+                    $(tabs[i]).removeClass('open');
+                    $(tabs[i] + '-btn').removeClass('active');
+                } else {
+                    $(view + '-btn').addClass('active');
+                    $(view).addClass('open');
+                }
+            }
+            //console.log(view);
+            //$(view).toggle();
+            //toggle open get tab section, set to show 
+        };
+
+    </script>
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        // Give the parameter a variable name
+        var dynamicContent = getParameterByName('project');
+        (function ($) {
+            // Parse the URL parameter
+            function getParameterByName(name, url) {
+                if (!url) {
+                    url = location.href.split("?project=").slice(-1)[0];
+                }
+
+                return url;
+
+            }
+            // Give the parameter a variable name
+            var dynamicContent = getParameterByName('project');
+
+            $(document).ready(function () {
+                $.getJSON("playground.json",
+                    function (data) {
+                        var pageContent = '';
+                        $.each(data, function (key, value) {
+                            // Check if the URL parameter is apples
+                            if (dynamicContent == value.url) {
+                                var pageImages = '';
+                                if (value.content.length > 1 && value.code != 'animation') {
+                                    console.log('"' + value.content + '"');
+                                    for (let i = 0; i < value.content.length; i++) {
+                                        pageImages += '<img src="' + value.content[i] + '">';
+                                    }
+                                } else if (value.code == 'animation') {
+                                    pageImages = value.content[1];
+                                } else {
+                                    pageImages = '<img src="' + value.content[0] + '">';
+                                }
+                                pageContent += '<div class="breadcrumbs"><h6><a href="playground.html">Playground</a> / <span class="current">' + value.title + '</span></h6></div><div class="project-wrapper"><div class="left-side"><div class="moving-content"><h4>'
+                                    + value.type + '</h4><h3>' + value.title + '</h3><h6>' + value.medium
+                                    + '</h6></div></div><div class="right-side">' + pageImages
+                                    + '</div></div>';
+                                //Add nested if statements depending on what is needed ie. youtube link, multiple images so on, default is the below
+                                /*pageContent += '<div class="breadcrumbs"><h6><a href="playground.html">Playground</a> / <span class="current">' + value.title + '</span></h6></div><div class="project-wrapper"><div class="left-side"><div class="moving-content"><h4>' 
+                                    + value.type + '</h4><h3>' + value.title + '</h3><h6>'+ value.medium 
+                                    + '</h6></div></div><div class="right-side"><img src="' + value.content 
+                                    +'"></div></div>';*/
+                                $('#dynamic-content').append(pageContent);
+                                $('#dynamic-content').show();
+                            }
+                            //Check if the URL parmeter is empty or not defined, display default content
+                            else if (dynamicContent == '') {
+                                $('#default-content').show();
+                            }
+                        });
+                    });
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>

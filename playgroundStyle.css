@@ -1,11 +1,5 @@
 
-body{
-  margin: 0;
-  padding: 0;
-  background: #fffff;
-  font-family: objektiv-mk2, sans-serif;
-  font-size: 20px;
-}
+
 /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
 
   /*    ~~   Playground Section   ~~    */
@@ -16,7 +10,8 @@ body{
   font-size: 70px;
   color: #1D252A;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 1.5em;
+  margin-bottom: 0;
 }
 
 .title hr {
@@ -37,192 +32,134 @@ body{
   font-style: normal;
   font-size: 22px;
   color: #1D252A;
-  margin: 20px 150px;
+  margin: 1.5em 7em;
 }
 span{
   font-size: 20px;
 }
 /*    ~~   page Links  ~~    */
-.pgLinks{
+
+.filter-btns{
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  justify-content: right;
+  margin: 1em 5em 0 5em;
 }
 
-.h2Link {
-  font-family: davis, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 35px;
-  color: #1D252A;
-  text-align: left;
-}
-
-a{
-  text-decoration: none;
-}
-
-.h2Link:hover{
-  color: #7B6F87;
-}
-
-.row{
-  order: 3;
-}
-
-/*    ~~   Page Content   ~~    */
-h2 {
-  font-family: davis, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 50px;
-  color: #1D252A;
-  text-align: left;
-  margin-left: 50px;
-}
-
-#split {
-  width: 1000px;
-  background-color: #1D252A;
-  height: 3px;
-  border: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin: auto;
-  opacity: 100%;
-}
-
-.ui, .indesign, .illustrator{
-  padding: 50px 75px;
-}
-
-/*    ~~   Bootstrap customization   ~~    */
-
-.btn{
-  background-color: white;
+#gallery-select{
+  background-color: rgba(0, 0, 0, 0);
   border: none;
+  border-bottom: 2px #868686 solid;
+  padding: 0 1em;
+  color: #868686;
+  font-size: 14px;
 }
 
-#uiImg{
-  width: 600px;
-  height: 400px;
+  .masonry-wrapper{
+  margin-top: 2em;
+  }
+  
+  .masonry {
+    column-count: 3;
+    column-gap: 15px;
+    margin: 0 3em;
+  }
+  
+  .masonry-item {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 1em;
+    break-inside: avoid;
+  }
+  
+  .masonry-item a img{
+    max-width: 100%;
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
+  
+  .masonry-wrap{
+    border: #d19000 16px solid;
+    transition: width 1s, height 1s, transform 1s;
+  }
+  
+  .masonry-wrap:hover{
+  transform: rotate(-1deg);
+  }
+
+/*    ~~   Gallery Wall Content Pages   ~~    */
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-column-gap: 1em;
 }
-
-
-#illImg, #designImg{
-  width: 450px;
-  height: 600px;
+.right-side img{
+  width: 100%;
+  padding-bottom: 2em;
 }
-
-
-.btn:hover{
-  background-color: #7B6F87;
+.moving-content h4, .moving-content h3, .moving-content h6{
+  margin: 0.25em 0;
 }
-
-.modal-body{
+.moving-content h4{
+  font-weight: 400;
+  font-size: 1rem;
+}
+.moving-content h6{
+  font-weight: 400;
+}
+.ytVideo{
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.ytVideo iframe{
+  width: 600px;
+  height: 360px;
 }
 
-.modal-title{
-  font-family: davis, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  color: #1D252A;
+.masonry-wrap a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.modal-footer{
-  font-family: objektiv-mk2, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #1D252A;
-  justify-content: flex-start;
-}
-
-
-@media only screen and (max-width: 2100px){
-  #uiImg{
-    width: 500px;
-    height: 350px;
-  }
-
-  #illImg, #designImg{
-    width: 400px;
-    height: 500px;
-  }
-}
 @media only screen and (max-width: 1200px){
-  h2{
-    text-align: center;
-    margin-left: 0px;
-  }
-
-  .ui, .indesign, .illustrator{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding: 50px 50px;
-  }
-
+  
 }
 @media only screen and (max-width: 992px){
   .title h1{
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 1em;
   }
 
   .title p{
     font-size: 15px;
+    margin: 1.5em 5em;
+  }
+  
+  .masonry {
+    column-count: 2;
+    column-gap: 10px;
+    margin: 0 3em;
   }
 
-  .h2Link{
-    font-size: 25px;
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 1em;
   }
-
-  .h2Link:hover{
-    color: #1D252A;
-  }
-
-  h2{
-    font-size: 35px;
-  }
-
-
-  #split {
-    width: 400px;
-  }
-
-  #uiImg{
-    width: 300px;
-    height: 225px;
-  }
-
-  #illImg, #designImg{
-    width: 300px;
-    height: 400px;
-  }
-
-  .modal-body img{
-    width: 500px;
-    height: 700px;
+  
+  .left-side{
+    margin-bottom: 2em;
   }
 }
 @media only screen and (max-width: 769px){
- .pgLinks{
-   margin-top: 20px;
-   margin-bottom: 20px;
- }
+  
 }
 @media only screen and (max-width: 600px){
   .title h1{
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 0.75em;
   }
 
   .title hr{
@@ -230,34 +167,20 @@ h2 {
   }
 
   .title p{
-    font-size: 15px;
-    margin: 20px 20px;
+    font-size: 14px;
+    margin: 1.5em 2em;
   }
 
-  .h2Link{
-    font-size: 18px;
+  .filter-btns{
+    justify-content: center;
   }
 
-  h2{
-    font-size: 30px;
+  .masonry {
+    column-count: 1;
+    margin: 0 2em;
   }
-
-  .ui, .indesign, .illustrator{
-    padding: 25px 10px;
-  }
-
-  #split {
-    width: 250px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  span{
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 370px){
-  .ui, .indesign, .illustrator{
-    padding: 25px 0px;
+  .ytVideo iframe{
+    width: 350px;
+    height: 200px;
   }
 }

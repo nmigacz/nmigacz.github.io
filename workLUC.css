@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: objektiv-mk2, sans-serif;
+    font-size: 20px;
+  }
+  html{
+      scroll-behavior:smooth
+    }
+
+.body-content-wrapper{ /* Move to styles or headerstyles */
+    margin: 0 5rem;
+}
+  
+    /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
+    /*    ~~   scroll down to see rwd for project MOSF page ~~   */
+  
+  /*===================================
+  === Project Title and Subhead ===
+  ======================================== */
+    .page-title{
+      margin: 1.5rem 0;
+      padding: 1rem 0 2rem 0;
+    }
+  
+    .page-title h1{
+      font-family: davis, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 50px;
+      color: #1D252A;
+      text-align: left;
+      margin: 0px 0px 0px 0px;
+    }
+  
+    .page-title h2{
+      font-family: davis, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 30px;
+      color: #1D252A;
+      text-align: left;
+      /*margin: -10px 0px 0px 0px;*/
+    }
+
+    .outside-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+      .main-content {
+        flex: 75%;
+        padding: 0 1.5rem;
+      }
+      
+      .sidebar-content {
+        flex: 25%;
+        margin: 0 1.5rem 0 0;
+      }
+
+      .sidebar{
+        list-style: none;
+        padding-inline-start: 0;
+        /*background-color: #CFC6D8; */
+        margin-top: 0;
+        border-radius: 4px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 3%;
+        font-size: 16px;
+        z-index: 1;
+      }
+
+      .sidebar li{
+        transition:color 0.50s ease;
+        display: block;
+        position: relative;
+      }
+      
+      .sidebar li:hover{
+        color: #1D252A;
+      }
+      
+      .sidebar li::after {
+        position: absolute;
+        content: '';
+        top:0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #CFC6D8;
+        transform-origin:left;
+        transition:width 0.90s ease;
+        z-index:-1;
+      }
+      
+      .sidebar li:hover::after {
+        width: 100%;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .sidebar li{
+        padding: 0.75rem 1.25rem 0.75rem 1rem;
+      }
+
+      .sidebar a{
+        text-decoration: none;
+        color: #354B57;
+      }
+      
+      /*.sidebar a:hover{
+        text-decoration: underline;
+        color: #354B57;
+      }*/
+  
+    /*===================================
+    === Overview and Project Info ===
+    ======================================== */
+    .content-section{
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+  
+    .content-section h1{
+      display: inline-block;
+      font-family: davis, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      color: #1D252A;
+      text-align: left;
+      margin: 0px 0px 0px 0px;
+      background-color: #FFE3A6;
+    }
+  
+    .content-section p{
+      display: inline-block;
+      font-family: objektiv-mk2, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 30px;
+      color: #1D252A;
+      text-align: left;
+      margin: 30px 0px 0px 0px;
+    }
+  
+    .side-roles{
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      float: left;
+      padding: 0px 0px 0px 200px;
+    }
+
+    #sidebar li.active {
+        background-color: #CFC6D8;
+        border-radius: 0 8px 8px 0;
+        border-left: #331552 6px solid;
+    }
+  
+  
+  @media only screen and (max-width: 2100px){
+    /*===================================
+    === Common Items ===
+    ======================================== */
+
+    .content-section h1{
+      font-size: 30px;
+    }
+  
+    .content-section p{
+      font-size: 20px;
+    }
+
+    /*===================================
+    === Project Title and Subhead ===
+    ======================================== */
+    .page-title h1{
+      font-size: 40px;
+    }
+  
+    .page-title h2{
+      font-size: 25px;
+    }
+  }
+  @media only screen and (max-width: 1200px){
+    /*===================================
+    === Common Items ===
+    ======================================== */
+    .body-content-wrapper{
+        margin: 0 5rem;
+    }
+    
+  }
+  @media only screen and (max-width: 992px){
+    /*===================================
+    === Common Items ===
+    ======================================== */
+   
+    .content-section h1{
+      font-size: 25px;
+    }
+  
+    .content-section p{
+      font-size: 15px;
+    }
+  
+    /*===================================
+    === Project Title and Subhead ===
+    ======================================== */
+    .page-title h1{
+      font-size: 35px;
+    }
+  
+    .page-title h2{
+      font-size: 20px;
+    }
+
+     /*===================================
+    === Content-Wrapper Sizing ===
+    ======================================== */
+    .outside-wrapper {
+        flex-wrap: wrap;
+    }
+    .sidebar-content {
+        flex: 100%;
+        margin: 0;
+      }
+    .main-content {
+      flex: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /*===================================
+    === Sidebar overhead styling ===
+    ======================================== */
+    .sidebar{
+        text-align: center;
+    }
+
+  }
+  @media only screen and (max-width: 769px){
+    /*===================================
+    === Long and Short Rule ===
+    ======================================== */
+    .body-content-wrapper{
+        margin: 0 3rem;
+    }
+
+    .page-title{
+        margin: 0.5rem 0;
+        padding: 0.75rem 0 2rem 0;
+      }
+    
+    .breadcrumbs{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 600px){
+  
+    .content-section p{
+      font-size: 15px;
+    }
+  
+    /*===================================
+    === Project Title and Subhead ===
+    ======================================== */
+    .page-title h1{
+      font-size: 30px;
+    }
+  
+    .page-title h2{
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 370px){
+    /*===================================
+    === Common Items ===
+    ======================================== */
+    .body-content-wrapper{
+        margin: 0 1.5rem;
+    }
+    .content-section h1{
+      font-size: 20px;
+    }
+  
+    /*===================================
+    === Project Title and Subhead ===
+    ======================================== */
+    .page-title h1{
+      font-size: 25px;
+    }
+  }
+  
