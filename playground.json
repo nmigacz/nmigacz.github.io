@@ -100,7 +100,7 @@
         "url": "ResearchProjectConflictMineralMining",
         "type": "Animation",
         "title": "Research Project: Conflict Mineral Mining",
-        "medium": "Made with Adobe Illustrator",
+        "medium": "Made with Procreate & Adobe Premiere",
         "content": ["img/animation/mining.png", "<div class='ytVideo'><iframe width='560' height='315' src='https://www.youtube.com/embed/pct3V67Xn64?si=RIRN_7UFHScCRJJ3' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe></div>"]
     },
     {
@@ -108,7 +108,7 @@
         "url": "PeaceSummit",
         "type": "Animation",
         "title": "Chicago Area Peace Action: Peace Summit, 2021 GIF",
-        "medium": "Made with Adobe Illustrator",
+        "medium": "Made with Procreate",
         "content": ["img/animation/peace_summit.GIF", "<img src='img/animation/peace_summit.GIF'"]
     }
 ]

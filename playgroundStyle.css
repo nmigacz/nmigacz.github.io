@@ -42,7 +42,9 @@ span{
 .filter-btns{
   display: flex;
   justify-content: right;
-  margin: 1em 5em 0 5em;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left:auto;
 }
 
 #gallery-select{
@@ -52,10 +54,14 @@ span{
   padding: 0 1em;
   color: #868686;
   font-size: 14px;
+  margin: 1em 5em 0 5em;
 }
 
   .masonry-wrapper{
   margin-top: 2em;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left:auto;
   }
   
   .masonry {
@@ -76,10 +82,25 @@ span{
     max-width: 100%;
     grid-row: 1 / -1;
     grid-column: 1;
+    border-style: solid;
+    border-width: 2px;
+    border-top-color: #f5f5f5;
+    border-right-color: #e8e8e8;
+    border-bottom-color: #f5f5f5;
+    border-left-color: #e8e8e8;
   }
   
   .masonry-wrap{
-    border: #d19000 16px solid;
+    /* border: #d19000 16px solid; */
+    background: #fff;
+    padding: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-top-color: #d19000;
+    border-right-color: #eba200;
+    border-bottom-color: #d19000;
+    border-left-color: #eba200;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.6);
     transition: width 1s, height 1s, transform 1s;
   }
   
@@ -123,6 +144,10 @@ span{
   cursor: pointer;
 }
 
+.body-wrapper{
+  max-width: 1440px;
+}
+
 @media only screen and (max-width: 1200px){
   
 }
@@ -158,12 +183,13 @@ span{
 }
 @media only screen and (max-width: 600px){
   .title h1{
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 0.75em;
   }
 
   .title hr{
     width: 250px;
+    height: 3px;
   }
 
   .title p{
@@ -177,7 +203,7 @@ span{
 
   .masonry {
     column-count: 1;
-    margin: 0 2em;
+    margin: 0 1em;
   }
   .ytVideo iframe{
     width: 350px;

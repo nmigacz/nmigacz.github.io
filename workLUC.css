@@ -11,6 +11,134 @@ body{
 .body-content-wrapper{ /* Move to styles or headerstyles */
     margin: 0 5rem;
 }
+p{
+    display: block;
+}
+:focus{
+    border: 2px solid #331552;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* on mobile make it 100% */
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .8);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #ffffff;
+    position: sticky;
+    top: 0px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+
+  .accordion-wrapper{
+    margin-top: 1em;
+  }
+
+  .img-modal img{
+    width: 80%;
+  }
+  .first {
+    margin-bottom: 1em;
+  }
+
+  .img-modal{
+      cursor: pointer;
+  }
+  
+  .img-modal:hover{
+    opacity: 0.8;
+  }
+
+  .img-modal:focus{
+    border: 2px solid #331552;
+  }
+
+  .pdf-img img{
+      padding-bottom: 1em;
+  }
+
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #CFC6D8;
+    color: #1D252A;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .accordion:first-child, .beyond-accordion .accordion {
+margin-bottom: 0.5em;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #bbafc8;
+  }
+  
+  .accordion:focus-visible{
+        border: 2px solid #331552;
+  }
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0;
+    background-color: #EEF8BF;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #1D252A;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
   
     /*    ~~   Find HEADER styles on headerStyle.css    ~~   */
     /*    ~~   scroll down to see rwd for project MOSF page ~~   */
@@ -19,15 +147,17 @@ body{
   === Project Title and Subhead ===
   ======================================== */
     .page-title{
-      margin: 1.5rem 0;
-      padding: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+        padding: 0.75rem 0 2rem 0;
+      padding-right: 15px;
+      padding-left: 15px;
     }
   
     .page-title h1{
       font-family: davis, sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 50px;
+      font-size: 2.5em;
       color: #1D252A;
       text-align: left;
       margin: 0px 0px 0px 0px;
@@ -37,26 +167,23 @@ body{
       font-family: davis, sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 30px;
+      font-size: 1.5em;
       color: #1D252A;
       text-align: left;
       /*margin: -10px 0px 0px 0px;*/
     }
 
-    .outside-wrapper {
-        display: flex;
-        justify-content: space-between;
+
+    /*===================================
+    === Sidebar styling ===
+    ======================================== */
+
+    .desktop-nav{
+        display: none;
     }
-      
-      .main-content {
-        flex: 75%;
-        padding: 0 1.5rem;
-      }
-      
-      .sidebar-content {
-        flex: 25%;
-        margin: 0 1.5rem 0 0;
-      }
+    .mobile-dropDown{
+        display: block;
+    }
 
       .sidebar{
         list-style: none;
@@ -69,6 +196,7 @@ body{
         top: 3%;
         font-size: 16px;
         z-index: 1;
+        text-align: left;
       }
 
       .sidebar li{
@@ -107,11 +235,31 @@ body{
         text-decoration: none;
         color: #354B57;
       }
-      
-      /*.sidebar a:hover{
-        text-decoration: underline;
-        color: #354B57;
-      }*/
+
+      .side-roles{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        float: left;
+        padding: 0px 0px 0px 200px;
+      }
+
+    #sidebar li.active {
+        background-color: #CFC6D8;
+        border-radius: 0 8px 8px 0;
+        border-left: #331552 6px solid;
+    }
+
+    .mobile-dropDown{
+        background-color: rgba(255, 255, 255, 0);
+        border-style: none;
+        border-bottom: solid #1D252A 1px;
+        margin: 0 0 2em 0;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
   
     /*===================================
     === Overview and Project Info ===
@@ -119,6 +267,19 @@ body{
     .content-section{
       margin: auto;
       margin-bottom: 2rem;
+    }
+
+    .main-content div{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .main-content .container{
+        padding: 0 1em;
+    }
+
+    .overview h1{
+        margin-left: -15px!important;
     }
   
     .content-section h1{
@@ -134,65 +295,155 @@ body{
     }
   
     .content-section p{
-      display: inline-block;
       font-family: objektiv-mk2, sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 30px;
+      font-size: 14px;
       color: #1D252A;
       text-align: left;
-      margin: 30px 0px 0px 0px;
+      margin: 10px 0px 0px 0px;
     }
-  
-    .side-roles{
-      display: block;
-      width: 100%;
-      height: 100%;
-      margin: auto;
-      float: left;
-      padding: 0px 0px 0px 200px;
+    .intro-p{
+        margin: 10px 0px 0px 0px; 
     }
 
-    #sidebar li.active {
-        background-color: #CFC6D8;
-        border-radius: 0 8px 8px 0;
-        border-left: #331552 6px solid;
-    }
-  
-  
-  @media only screen and (max-width: 2100px){
-    /*===================================
-    === Common Items ===
-    ======================================== */
-
-    .content-section h1{
-      font-size: 30px;
-    }
-  
-    .content-section p{
-      font-size: 20px;
+    .content-section li{
+        margin: 0.5em 0;
+        font-family: objektiv-mk2, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 14px;
+      color: #1D252A;
+      text-align: left;
     }
 
-    /*===================================
-    === Project Title and Subhead ===
-    ======================================== */
-    .page-title h1{
-      font-size: 40px;
+    .overview-inner-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0.5em 0;
     }
+
+
+    .info-piece{
+        padding: 0.5em 0.2em;
+    }
+
+    .info-piece .info-header{
+        font-family: davis, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: #1D252A;
+        text-align: left; 
+        margin-bottom: 0;     
+    }
+
+    .info-piece p{
+        margin: 0;
+    }
+
+    li a, p a{
+        color: #331552;
+        text-decoration: underline;
+    }
+
+    li a:hover, p a:hover{
+        color: #7B6F87;
+    }
+
+    .btn-local{
+        display: block;
+        border-radius: 8px;
+        text-align: center;
+        border: 2px solid #bbafc8;
+        padding: 10px 15px;
+        width: 100%;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .btn-local:hover{
+        background-color: #bbafc8;
+        color: #1D252A;
+        text-decoration: none;
+    }
+
+    .btn-local:focus{
+        border: 2px solid #331552;
+        background-color: #bbafc8;
+    }
+
+
+    /*===================================
+    === Mobile-first Responsive Design ===
+    ======================================== */
   
-    .page-title h2{
-      font-size: 25px;
+    @media only screen and (min-width: 1440px){
+        .content-section p, .content-section li{
+            font-size: 18px;
+          }
+
+          .btn-local{
+            width: 70%;
+        }
     }
-  }
-  @media only screen and (max-width: 1200px){
-    /*===================================
-    === Common Items ===
-    ======================================== */
-    .body-content-wrapper{
-        margin: 0 5rem;
+
+    @media only screen and (min-width: 992px){
+        .page-title h1{
+            font-size: 40px;
+          }
+          .page-title h2{
+            font-size: 25px;
+          }
+        .content-section h1{
+            font-size: 30px;
+          }
+        .content-section p, .content-section li{
+            font-size: 16px;
+          }
+          .intro-p{
+            margin: 30px 0px 0px 0px;
+          }
+          .info-piece .info-header{
+            font-size: 22px;   
+        }
+
     }
-    
-  }
+
+    @media only screen and (min-width: 768px){
+
+        .desktop-nav{
+            display: block;
+        }
+        .mobile-dropDown{
+            display: none;
+        }
+        .sidebar{
+            text-align: left;
+        }
+        .page-title{
+            margin: 1.5rem 0;
+            padding: 1rem 0 2rem 0;
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+          .info-box{
+            padding: 0 0 0 1em !important;
+        }
+        .main-content .container{
+            padding: 0 15px;
+        }
+
+        .thumbnail .col-md-6, .thumbnail .col-md-8{
+            max-height: 300px;
+            overflow: hidden;
+        }
+    }
+
+    @media only screen and (min-width: 552px){
+
+    }
+
   @media only screen and (max-width: 992px){
     /*===================================
     === Common Items ===
@@ -200,10 +451,6 @@ body{
    
     .content-section h1{
       font-size: 25px;
-    }
-  
-    .content-section p{
-      font-size: 15px;
     }
   
     /*===================================
@@ -236,9 +483,6 @@ body{
     /*===================================
     === Sidebar overhead styling ===
     ======================================== */
-    .sidebar{
-        text-align: center;
-    }
 
   }
   @media only screen and (max-width: 769px){
@@ -249,20 +493,12 @@ body{
         margin: 0 3rem;
     }
 
-    .page-title{
-        margin: 0.5rem 0;
-        padding: 0.75rem 0 2rem 0;
-      }
-    
     .breadcrumbs{
         display: none;
     }
   }
   @media only screen and (max-width: 600px){
   
-    .content-section p{
-      font-size: 15px;
-    }
   
     /*===================================
     === Project Title and Subhead ===
