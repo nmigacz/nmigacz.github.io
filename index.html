@@ -33,7 +33,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Welcome to Nick Migacz's portfolio website. Nick currently works for Ann & Robert H. Lurie Children's Hospital of Chicago Foundation. Here you will find the programming and design projects Nick is most proud of.">
-
 </head>
 
 <body>
@@ -94,7 +93,47 @@
     </ul>
   </div>
 
+  <div class="spacer"></div>
 
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'work')" id="defaultOpen">Work</button>
+            <button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="work" class="tabcontent">
+            <div class="row">
+              <div class="col-md-6">
+                <p>hello</p>
+              </div>
+              <div class="col-md-6">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="projects" class="tabcontent">
+            <div class="row">
+              <div class="col-md-12 mx-auto">
+                <a href="proj50SP.html"><img id="itemaimg" src="img/Portfolio50SP.png" alt="50 Stolen Plays Project"></a>
+                <a href="proj50SP.html"><img id="itemaimg_small" src="img/Portfolio50SP_small.png"
+                    alt="50 Stolen Plays Project"></a>
+              </div>
+              <div class="col-md-6 mx-auto itemb">
+                <a href="projMOSF.html"><img id="itembimg" src="img/PortfolioMOSF.png" style="width: 95%; "
+                  alt="8 Ride Redesign Project"></a>
+              </div>
+              <div class="col-md-6 mx-auto">
+                <a href="proj8Ride.html"><img id="itemcimg" src="img/Portfolio8Ride.png" alt="8 Ride Redesign Project"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!--- Projects Section  -->
   <div class="projects">
@@ -128,6 +167,11 @@
   <div id="footer-section">
     <!--- Footer content here  -->
   </div>
+
+  <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 
 </body>
 

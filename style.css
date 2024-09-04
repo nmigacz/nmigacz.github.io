@@ -151,7 +151,6 @@
     background-color: #FFAF00;
     height: 6px;
     border: 0;
-    margin-top: -40px;
   }
 
   .grid{
@@ -208,7 +207,6 @@
 
   #itembimg{
     width: 100%;
-    height: auto;
     padding: 0px 0px 0px 10px;
   }
 
@@ -230,6 +228,76 @@
     height: auto;
     margin: auto;
   }
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  text-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  font-family: davis, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  color: #353e44;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  background-color: #EEF8BF;
+}
+
+/* Change background color of buttons on hover */
+.tab button:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.tab button:hover:after, .tab button.active:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #1D252A;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin-top: 1em;
+  border-top: none;
+}
+
+@media only screen and (min-width:1440px){
+
+}
+
+@media only screen and (min-width: 992px){
+
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 552px){
+
+}
 
 @media only screen and (max-width: 2100px){
   .opening{

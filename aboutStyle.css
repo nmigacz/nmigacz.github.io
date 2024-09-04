@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: #fffff;
+  background: #ffffff;
   font-family: objektiv-mk2, sans-serif;
   font-size: 20px;
 }
@@ -27,7 +27,6 @@ body{
     background-color: #FFAF00;
     height: 6px;
     border: 0;
-    margin-top: -40px;
   }
   /*===================================
   === About Me section ===
