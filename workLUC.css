@@ -78,15 +78,7 @@ p{
   }
 
   .img-modal{
-      cursor: pointer;
-  }
-  
-  .img-modal:hover{
-    opacity: 0.8;
-  }
-
-  .img-modal:focus{
-    border: 2px solid #331552;
+    pointer-events: none;
   }
 
   .pdf-img img{
@@ -438,6 +430,18 @@ margin-bottom: 0.5em;
             max-height: 300px;
             overflow: hidden;
         }
+        .img-modal{
+          pointer-events: auto;
+          cursor: pointer;
+      }
+      
+      .img-modal:hover{
+        opacity: 0.8;
+      }
+    
+      .img-modal:focus{
+        border: 2px solid #331552;
+      }
     }
 
     @media only screen and (min-width: 552px){
